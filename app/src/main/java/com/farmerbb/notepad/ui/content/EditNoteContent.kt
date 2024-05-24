@@ -36,12 +36,12 @@ import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.TextFieldValue
-import androidx.compose.ui.tooling.preview.Preview
+//import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.farmerbb.notepad.R
 import com.farmerbb.notepad.ui.components.RtlTextWrapper
-import com.farmerbb.notepad.ui.previews.EditNotePreview
+//import com.farmerbb.notepad.ui.previews.EditNotePreview
 import kotlinx.coroutines.delay
 
 private fun String.toTextFieldValue() = TextFieldValue(
@@ -102,6 +102,7 @@ fun EditNoteContent(
         )
     }
 
+
     if(value.text.isEmpty()) {
         BasicText(
             text = stringResource(id = R.string.edit_text),
@@ -117,6 +118,8 @@ fun EditNoteContent(
         )
     }
 
+    
+
     LaunchedEffect(Unit) {
         if (waitForAnimation) {
             delay(200)
@@ -126,6 +129,7 @@ fun EditNoteContent(
     }
 }
 
-@Preview
-@Composable
-fun EditNoteContentPreview() = EditNotePreview()
+//@Preview
+//@Composable
+//fun EditNoteContentPreview() = EditNotePreview()
+

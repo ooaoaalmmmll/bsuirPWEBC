@@ -15,15 +15,39 @@
 
 package com.farmerbb.notepad.model
 
+import kotlinx.serialization.*
+import kotlinx.serialization.descriptors.PrimitiveKind
+import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
+import kotlinx.serialization.encoding.Decoder
+import kotlinx.serialization.encoding.Encoder
 import java.util.Date
+
 
 data class Note(
     val metadata: NoteMetadata = Defaults.metadata,
     private val contents: NoteContents = Defaults.contents
 ) {
+    constructor(jNote: JsonNote) : this(
+    metadata = NoteMetadata(jNote.id, jNote.title, Date(jNote.date), false
+    ),
+    contents = NoteContents(jNote.id, jNote.text, null)
+)
     val id: Long get() = metadata.metadataId
     val text: String get() = contents.text ?: ""
     val draftText: String get() = contents.draftText ?: ""
     val title: String get() = metadata.title
     val date: Date get() = metadata.date
+
 }
+
+@Serializable
+public data class JsonNote(
+    public val id: Long = 0,
+    public val text: String = "",
+    public val draftText: String = "",
+    public val title: String= "",
+    public val date: Long =0,
+){
+}
+
+

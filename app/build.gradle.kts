@@ -4,6 +4,7 @@ plugins {
     id("com.android.application")
     id("kotlin-android")
     id("com.squareup.sqldelight")
+    kotlin("plugin.serialization") version "1.8.0"
 }
 
 repositories {
@@ -107,6 +108,11 @@ dependencies {
     implementation(libs.bundles.coroutines)
     implementation(libs.bundles.koin)
     implementation(libs.bundles.richtext)
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:0.7.6")
+    implementation("io.ktor:ktor-client-cio:2.3.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1")
+
 
     implementation(libs.composePreferences)
     implementation(libs.fsaf)
@@ -114,6 +120,7 @@ dependencies {
     implementation(libs.okio)
     implementation(libs.sqldelight)
     implementation(libs.systemuicontroller)
+    implementation(libs.play.services.base)
     debugImplementation(libs.compose.ui.tooling)
     coreLibraryDesugaring(libs.android.coreLibraryDesugaring)
 }

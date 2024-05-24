@@ -15,11 +15,13 @@
 
 package com.farmerbb.notepad.ui.components
 
+import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.filled.Assistant
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.MoreVert
@@ -71,7 +73,18 @@ fun SaveButton(onClick: () -> Unit = {}) {
         )
     }
 }
-
+/*
+@Composable
+fun VuiButton(onClick: () -> Unit = {}) {
+    FloatingActionButton(onClick = onClick) {
+        Icon(
+            imageVector = Icons.Filled.Assistant,
+            contentDescription = stringResource(R.string.action_save),
+            tint = Color.White
+        )
+    }
+}
+*/
 @Composable
 fun DeleteButton(onClick: () -> Unit = {}) {
     IconButton(onClick = onClick) {

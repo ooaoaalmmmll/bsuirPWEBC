@@ -19,7 +19,10 @@ package com.farmerbb.notepad.viewmodel
 
 import android.app.Application
 import android.content.Intent
+import android.util.Log
 import androidx.annotation.StringRes
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.farmerbb.notepad.R
@@ -29,6 +32,7 @@ import com.farmerbb.notepad.model.FilenameFormat
 import com.farmerbb.notepad.model.Note
 import com.farmerbb.notepad.model.NoteMetadata
 import com.farmerbb.notepad.model.PrefKeys
+import com.farmerbb.notepad.model.SortOrder
 import com.farmerbb.notepad.usecase.ArtVandelay
 import com.farmerbb.notepad.usecase.DataMigrator
 import com.farmerbb.notepad.usecase.KeyboardShortcuts
@@ -43,12 +47,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.BufferOverflow
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flatMapConcat
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import okio.buffer
 import okio.sink
@@ -56,8 +62,9 @@ import okio.source
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
+import java.util.Date
 
-class NotepadViewModel(
+ class NotepadViewModel(
     private val context: Application,
     private val repo: NotepadRepository,
     val dataStoreManager: DataStoreManager,
@@ -68,327 +75,444 @@ class NotepadViewModel(
     systemTheme: SystemTheme
 ): ViewModel() {
 
-    /*********************** Data ***********************/
+     /*********************** Data ***********************/
 
-    private val _noteState = MutableStateFlow(Note())
-    val noteState: StateFlow<Note> = _noteState
+     private val _noteState = MutableStateFlow(Note())
+     val noteState: StateFlow<Note> = _noteState
 
-    private val _text = MutableStateFlow("")
-    val text: StateFlow<String> = _text
+     private val _text = MutableStateFlow("")
+     val text: StateFlow<String> = _text
 
-    private val selectedNotes = mutableMapOf<Long, Boolean>()
-    private val _selectedNotesFlow = MutableSharedFlow<Map<Long, Boolean>>(
-        replay = 1,
-        onBufferOverflow = BufferOverflow.DROP_OLDEST,
-    )
-    val selectedNotesFlow: SharedFlow<Map<Long, Boolean>> = _selectedNotesFlow
+     private val selectedNotes = mutableMapOf<Long, Boolean>()
+     private val _selectedNotesFlow = MutableSharedFlow<Map<Long, Boolean>>(
+         replay = 1,
+         onBufferOverflow = BufferOverflow.DROP_OLDEST,
+     )
+     val selectedNotesFlow: SharedFlow<Map<Long, Boolean>> = _selectedNotesFlow
 
-    val noteMetadata get() = prefs.sortOrder.flatMapConcat(repo::noteMetadataFlow)
-    val prefs = dataStoreManager.prefs(viewModelScope, systemTheme)
+     val prefs = dataStoreManager.prefs(viewModelScope, systemTheme)
 
-    private val _savedDraftId = MutableStateFlow<Long?>(null)
-    val savedDraftId: StateFlow<Long?> = _savedDraftId
-    private var savedDraftIdJob: Job? = null
+     private val _savedDraftId = MutableStateFlow<Long?>(null)
+     val savedDraftId: StateFlow<Long?> = _savedDraftId
+     private var savedDraftIdJob: Job? = null
 
-    private var isEditing = false
+     private var isEditing = false
 
-    /*********************** UI Operations ***********************/
 
-    fun setText(text: String) {
-        _text.value = text
-    }
+     val noteMetadata get() = prefs.sortOrder.flatMapConcat(repo::noteMetadataFlow)
 
-    fun clearNote() {
-        _noteState.value = Note()
-        _text.value = ""
-    }
+     /*********************** DATA IMPORT ***********************/
 
-    fun toggleSelectedNote(id: Long) {
-        selectedNotes[id] = !selectedNotes.getOrDefault(id, false)
-        _selectedNotesFlow.tryEmit(selectedNotes.filterValues { it })
-    }
+     private val _notes = MutableStateFlow<List<Note>>(emptyList())
+     val notes: StateFlow<List<Note>> = _notes
+     private val _lastNoteInLocalDB = MutableLiveData<NoteMetadata?>()
+     val lastNoteInLocalDB: LiveData<NoteMetadata?> get() = _lastNoteInLocalDB
+     var lastNoteInDistantDB: Note? = null
+     var isLocalDBUptoDate: Boolean? = null
 
-    fun clearSelectedNotes() {
-        selectedNotes.clear()
-        _selectedNotesFlow.tryEmit(emptyMap())
-    }
+     fun updateNotes(newNotes: List<Note>) {
+         _notes.value = newNotes
+     }
 
-    fun selectAllNotes(notes: List<NoteMetadata>) {
-        notes.forEach {
-            selectedNotes[it.metadataId] = true
-        }
 
-        _selectedNotesFlow.tryEmit(selectedNotes.filterValues { it })
-    }
 
-    fun showToast(@StringRes text: Int) = viewModelScope.launch {
-        toaster.toast(text)
-    }
+     fun fetchlastNoteInDistantDB(){
+         lastNoteInDistantDB = notes.value.maxWithOrNull(compareBy { it.date ?: Date(Long.MAX_VALUE) })
+         Log.v("fetchlastNoteInDistant", lastNoteInDistantDB.toString())
+     }
 
-    fun showToastIf(
-        condition: Boolean,
-        @StringRes text: Int,
-        block: () -> Unit
-    ) = viewModelScope.launch {
-        toaster.toastIf(condition, text, block)
-    }
 
-    fun shareNote(text: String) = viewModelScope.launch {
-        text.checkLength {
-            context.showShareSheet(text)
-        }
-    }
+     fun fetchLastNoteInLocalDB() = runBlocking {
+         viewModelScope.launch() {
+             // Specify the desired sort order
+             val sortOrder = SortOrder.DateDescending
+             // Collect the flow of note metadata
+             Log.v("localRequest", "localRequest")
+             repo.noteMetadataFlow(sortOrder).collect { localNotes ->
+                 // Find the note metadata with the latest date
 
-    fun checkForUpdates() = context.checkForUpdates()
+                 _lastNoteInLocalDB.value =
+                     localNotes.maxWithOrNull(compareBy { it?.date ?: Date(Long.MAX_VALUE) })
+                 Log.v("localResponse", _lastNoteInLocalDB.value.toString())
 
-    fun setIsEditing(value: Boolean) {
-        isEditing = value
-    }
+             }
+         }
+     }
 
-    /*********************** Database Operations ***********************/
 
-    fun getSavedDraftId() {
-        savedDraftIdJob = viewModelScope.launch(Dispatchers.IO) {
-            repo.savedDraftId.collect { id ->
-                _savedDraftId.value = id
 
-                if (id != -1L) {
-                    toaster.toast(R.string.draft_restored)
-                }
 
-                savedDraftIdJob?.cancel()
-            }
-        }
-    }
+     fun setBoolisLocalDBUptoDate() = runBlocking {
+             viewModelScope.launch {
+                 val localNotedate = _lastNoteInLocalDB.value?.date
+                 Log.v("localNotedate", _lastNoteInLocalDB?.value.toString())
 
-    fun getNote(id: Long?) = viewModelScope.launch(Dispatchers.IO) {
-        id?.let {
-            _noteState.value = repo.getNote(it)
+                 val distantNotedate = lastNoteInDistantDB?.date
+                 Log.v("distantNote", lastNoteInDistantDB.toString())
 
-            if (text.value.isEmpty()) {
-                _text.value = with(noteState.value) {
-                    draftText.ifEmpty { text }
-                }
-            }
-        } ?: run {
-            _noteState.value = Note()
-        }
-    }
+                 if (localNotedate != null && distantNotedate != null && localNotedate > distantNotedate) {
+                     Log.v("isLocalDBUptoDate", "LOCAL iS UP TO DATE")
+                     isLocalDBUptoDate = true
+                 } else if(_lastNoteInLocalDB.value==null || distantNotedate != null) {
+                     Log.v("isLocalDBUptoDate", "DISTANT iS UP TO DATE")
+                     isLocalDBUptoDate = false
+                     Log.v("isLocalDBUptoDate", isLocalDBUptoDate.toString())
+                 }else Log.v("DBs", "DBs empty")
+                 Log.v("isLocalDBUptoDate2", isLocalDBUptoDate.toString())
+             }
+     }
+            //TODO fix constacy of
+            //                 Log.v("isLocalDBUptoDate", "DISTANT iS UP TO DATE")
+            //                     isLocalDBUptoDate = false
 
-    fun deleteSelectedNotes(
-        onSuccess: () -> Unit
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        selectedNotes.filterValues { it }.keys.let { ids ->
-            repo.deleteNotes(ids.toList()) {
-                clearSelectedNotes()
 
-                val toastId = when (ids.size) {
-                    1 -> R.string.note_deleted
-                    else -> R.string.notes_deleted
-                }
+         suspend fun cpyDB() {
+             viewModelScope.launch() {
+                 Log.v("debug", "where r in cpyDB")
+                 Log.v("debug", isLocalDBUptoDate.toString())
+                 when(isLocalDBUptoDate) {
+                     null-> {
+                         Log.v("racecondition", "isLocalDBUptoDate is not yet set")
+                     }
+                     false-> {
+                         val listofidtodelete: MutableList<Long> = mutableListOf()
 
-                toaster.toast(toastId)
-                onSuccess()
-            }
-        }
-    }
+                            Log.v("listofidtodelete", listofidtodelete.toString()) //
 
-    fun deleteNote(
-        id: Long,
-        onSuccess: () -> Unit
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        repo.deleteNote(id) {
-            toaster.toast(R.string.note_deleted)
-            onSuccess()
-        }
-    }
+                         val sortOrder = SortOrder.DateDescending
 
-    fun saveNote(
-        id: Long,
-        text: String,
-        onSuccess: (Long) -> Unit = {}
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        text.checkLength {
-            repo.saveNote(id, text) {
-                toaster.toast(R.string.note_saved)
-                onSuccess(it)
-            }
-        }
-    }
+                         // Collect the flow of note metadata
+                         repo.noteMetadataFlow(sortOrder).collect { noteMetadatalist ->
+                             Log.v("debug", noteMetadatalist.toString())
 
-    fun saveDraft(
-        onSuccess: suspend () -> Unit = { toaster.toast(R.string.draft_saved) }
-    ) {
-        val draftText = text.value
-        if (!isEditing || draftText.isEmpty()) return
+                             noteMetadatalist.forEach { noteMetadata ->
+                                 val IDtodelete: Long = noteMetadata.metadataId
+                                 listofidtodelete.add(IDtodelete)
+                                 Log.v("debug", noteMetadata.metadataId.toString())
+                             }
 
-        if (noteState.value.text == draftText) {
-            viewModelScope.launch { onSuccess() }
-            return
-        }
+                             Log.v("listinside repo", listofidtodelete.toList().toString())
 
-        viewModelScope.launch(Dispatchers.IO) {
-            with(noteState.value) {
-                repo.saveNote(id, text, date, draftText) { newId ->
-                    getNote(newId)
-                    onSuccess()
-                }
-            }
-        }
-    }
+                             if (listofidtodelete.size != 0) withContext(Dispatchers.Main) {
+                                 repo.deleteNotes(listofidtodelete.toList()){}
+                             }
 
-    fun deleteDraft() = viewModelScope.launch(Dispatchers.IO) {
-        with(noteState.value) {
-            when {
-                text.isEmpty() -> repo.deleteNote(id)
-                !isEditing -> repo.saveNote(id, text, date)
-            }
-        }
-    }
+                              repo.saveNotes(notes)
 
-    /*********************** Preference Operations ***********************/
+                         }
 
-    fun firstRunComplete() = viewModelScope.launch(Dispatchers.IO) {
-        dataStoreManager.editPreference(
-            key = PrefKeys.FirstRun,
-            newValue = 1
-        )
-    }
+                     }
+                     true-> {}
+                 }
+             }
+         }
 
-    fun firstViewComplete() = viewModelScope.launch(Dispatchers.IO) {
-        dataStoreManager.editPreference(
-            key = PrefKeys.FirstLoad,
-            newValue = 1
-        )
-    }
+          fun chooseAndFetchDB() = runBlocking{
+              viewModelScope.launch(){
 
-    fun doubleTapMessageShown() = viewModelScope.launch(Dispatchers.IO) {
-        toaster.toast(R.string.double_tap)
+                 fetchlastNoteInDistantDB()
+                 setBoolisLocalDBUptoDate()
+              cpyDB()}
+             }
 
-        dataStoreManager.editPreference(
-            key = PrefKeys.ShowDoubleTapMessage,
-            newValue = false
-        )
-    }
 
-    /*********************** Import / Export ***********************/
+         /*********************** UI Operations ***********************/
 
-    fun importNotes() = artVandelay.importNotes(::saveImportedNote) { size ->
-        val toastId = when (size) {
-            1 -> R.string.note_imported_successfully
-            else -> R.string.notes_imported_successfully
-        }
+         fun setText(text: String) {
+             _text.value = text
+         }
 
-        viewModelScope.launch {
-            toaster.toast(toastId)
-        }
-    }
+         fun clearNote() {
+             _noteState.value = Note()
+             _text.value = ""
+         }
 
-    fun exportNotes(
-        metadata: List<NoteMetadata>,
-        filenameFormat: FilenameFormat
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        val hydratedNotes = repo.getNotes(
-            metadata.filter {
-                selectedNotes.getOrDefault(it.metadataId, false)
-            }
-        ).also {
-            clearSelectedNotes()
-        }
+         fun toggleSelectedNote(id: Long) {
+             selectedNotes[id] = !selectedNotes.getOrDefault(id, false)
+             _selectedNotesFlow.tryEmit(selectedNotes.filterValues { it })
+         }
 
-        if (hydratedNotes.size == 1) {
-            val note = hydratedNotes.first()
-            exportSingleNote(note.metadata, note.text, filenameFormat)
-            return@launch
-        }
+         fun clearSelectedNotes() {
+             selectedNotes.clear()
+             _selectedNotesFlow.tryEmit(emptyMap())
+         }
 
-        artVandelay.exportNotes(
-            hydratedNotes,
-            filenameFormat,
-            ::saveExportedNote,
-            ::clearSelectedNotes
-        ) {
-            viewModelScope.launch {
-                toaster.toast(R.string.notes_exported_to)
-            }
-        }
-    }
+         fun selectAllNotes(notes: List<NoteMetadata>) {
+             notes.forEach {
+                 selectedNotes[it.metadataId] = true
+             }
 
-    fun exportSingleNote(
-        metadata: NoteMetadata,
-        text: String,
-        filenameFormat: FilenameFormat
-    ) = viewModelScope.launch {
-        text.checkLength {
-            artVandelay.exportSingleNote(
-                metadata,
-                filenameFormat,
-                { saveExportedNote(it, text) }
-            ) {
-                viewModelScope.launch {
-                    toaster.toast(R.string.note_exported_to)
-                }
-            }
-        }
-    }
+             _selectedNotesFlow.tryEmit(selectedNotes.filterValues { it })
+         }
 
-    private fun saveImportedNote(
-        input: InputStream
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        input.source().buffer().use {
-            val text = it.readUtf8()
-            if (text.isNotEmpty()) {
-                repo.saveNote(text = text)
-            }
-        }
-    }
+         fun showToast(@StringRes text: Int) = viewModelScope.launch {
+             toaster.toast(text)
+         }
 
-    private fun saveExportedNote(
-        output: OutputStream,
-        text: String
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        output.sink().buffer().use {
-            it.writeUtf8(text)
-        }
-    }
+         fun showToastIf(
+             condition: Boolean,
+             @StringRes text: Int,
+             block: () -> Unit
+         ) = viewModelScope.launch {
+             toaster.toastIf(condition, text, block)
+         }
 
-    fun loadFileFromIntent(
-        intent: Intent,
-        onLoad: (String?) -> Unit
-    ) = viewModelScope.launch(Dispatchers.IO) {
-        intent.data?.let { uri ->
-            val input = context.contentResolver.openInputStream(uri) ?: run {
-                onLoad(null)
-                return@launch
-            }
+         fun shareNote(text: String) = viewModelScope.launch {
+             text.checkLength {
+                 context.showShareSheet(text)
+             }
+         }
 
-            input.source().buffer().use {
-                val text = it.readUtf8()
-                withContext(Dispatchers.Main) {
-                    onLoad(text)
-                }
-            }
-        } ?: onLoad(null)
-    }
+         fun checkForUpdates() = context.checkForUpdates()
 
-    /*********************** Miscellaneous ***********************/
+         fun setIsEditing(value: Boolean) {
+             isEditing = value
+         }
 
-    private suspend fun String.checkLength(
-        onSuccess: suspend () -> Unit
-    ) = when(length) {
-        0 -> toaster.toast(R.string.empty_note)
-        else -> onSuccess()
-    }
+         /*********************** Database Operations ***********************/
 
-    fun migrateData(onComplete: () -> Unit) = viewModelScope.launch {
-        dataMigrator.migrate()
-        onComplete()
-    }
+         fun getSavedDraftId() {
+             savedDraftIdJob = viewModelScope.launch(Dispatchers.IO) {
+                 repo.savedDraftId.collect { id ->
+                     _savedDraftId.value = id
 
-    fun keyboardShortcutPressed(keyCode: Int) = keyboardShortcuts.pressed(keyCode)
-    fun registerKeyboardShortcuts(vararg mappings: Pair<Int, () -> Unit>) =
-        keyboardShortcuts.register(*mappings)
-}
+                     if (id != -1L) {
+                         toaster.toast(R.string.draft_restored)
+                     }
+
+                     savedDraftIdJob?.cancel()
+                 }
+             }
+         }
+
+         fun getNote(id: Long?) = viewModelScope.launch(Dispatchers.IO) {
+             id?.let {
+                 _noteState.value = repo.getNote(it)
+
+                 if (text.value.isEmpty()) {
+                     _text.value = with(noteState.value) {
+                         draftText.ifEmpty { text }
+                     }
+                 }
+             } ?: run {
+                 _noteState.value = Note()
+             }
+         }
+
+         fun deleteSelectedNotes(
+             onSuccess: () -> Unit
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             selectedNotes.filterValues { it }.keys.let { ids ->
+                 repo.deleteNotes(ids.toList()) {
+                     clearSelectedNotes()
+
+                     val toastId = when (ids.size) {
+                         1 -> R.string.note_deleted
+                         else -> R.string.notes_deleted
+                     }
+
+                     toaster.toast(toastId)
+                     onSuccess()
+                 }
+             }
+         }
+
+         fun deleteNote(
+             id: Long,
+             onSuccess: () -> Unit
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             repo.deleteNote(id) {
+                 toaster.toast(R.string.note_deleted)
+                 onSuccess()
+             }
+         }
+
+         fun saveNote(
+             id: Long,
+             text: String,
+             onSuccess: (Long) -> Unit = {}
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             text.checkLength {
+                 repo.saveNote(id, text) {
+                     toaster.toast(R.string.note_saved)
+                     onSuccess(it)
+                 }
+             }
+         }
+
+         fun saveDraft(
+             onSuccess: suspend () -> Unit = { toaster.toast(R.string.draft_saved) }
+         ) {
+             val draftText = text.value
+             if (!isEditing || draftText.isEmpty()) return
+
+             if (noteState.value.text == draftText) {
+                 viewModelScope.launch { onSuccess() }
+                 return
+             }
+
+             viewModelScope.launch(Dispatchers.IO) {
+                 with(noteState.value) {
+                     repo.saveNote(id, text, date, draftText) { newId ->
+                         getNote(newId)
+                         onSuccess()
+                     }
+                 }
+             }
+         }
+
+         fun deleteDraft() = viewModelScope.launch(Dispatchers.IO) {
+             with(noteState.value) {
+                 when {
+                     text.isEmpty() -> repo.deleteNote(id)
+                     !isEditing -> repo.saveNote(id, text, date)
+                 }
+             }
+         }
+
+         /*********************** Preference Operations ***********************/
+
+         fun firstRunComplete() = viewModelScope.launch(Dispatchers.IO) {
+             dataStoreManager.editPreference(
+                 key = PrefKeys.FirstRun,
+                 newValue = 1
+             )
+         }
+
+         fun firstViewComplete() = viewModelScope.launch(Dispatchers.IO) {
+             dataStoreManager.editPreference(
+                 key = PrefKeys.FirstLoad,
+                 newValue = 1
+             )
+         }
+
+         fun doubleTapMessageShown() = viewModelScope.launch(Dispatchers.IO) {
+             toaster.toast(R.string.double_tap)
+
+             dataStoreManager.editPreference(
+                 key = PrefKeys.ShowDoubleTapMessage,
+                 newValue = false
+             )
+         }
+
+         /*********************** Import / Export ***********************/
+
+         fun importNotes() = artVandelay.importNotes(::saveImportedNote) { size ->
+             val toastId = when (size) {
+                 1 -> R.string.note_imported_successfully
+                 else -> R.string.notes_imported_successfully
+             }
+
+             viewModelScope.launch {
+                 toaster.toast(toastId)
+             }
+         }
+
+         fun exportNotes(
+             metadata: List<NoteMetadata>,
+             filenameFormat: FilenameFormat
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             val hydratedNotes = repo.getNotes(
+                 metadata.filter {
+                     selectedNotes.getOrDefault(it.metadataId, false)
+                 }
+             ).also {
+                 clearSelectedNotes()
+             }
+
+             if (hydratedNotes.size == 1) {
+                 val note = hydratedNotes.first()
+                 exportSingleNote(note.metadata, note.text, filenameFormat)
+                 return@launch
+             }
+
+             artVandelay.exportNotes(
+                 hydratedNotes,
+                 filenameFormat,
+                 ::saveExportedNote,
+                 ::clearSelectedNotes
+             ) {
+                 viewModelScope.launch {
+                     toaster.toast(R.string.notes_exported_to)
+                 }
+             }
+         }
+
+         fun exportSingleNote(
+             metadata: NoteMetadata,
+             text: String,
+             filenameFormat: FilenameFormat
+         ) = viewModelScope.launch {
+             text.checkLength {
+                 artVandelay.exportSingleNote(
+                     metadata,
+                     filenameFormat,
+                     { saveExportedNote(it, text) }
+                 ) {
+                     viewModelScope.launch {
+                         toaster.toast(R.string.note_exported_to)
+                     }
+                 }
+             }
+         }
+
+         private fun saveImportedNote(
+             input: InputStream
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             input.source().buffer().use {
+                 val text = it.readUtf8()
+                 if (text.isNotEmpty()) {
+                     repo.saveNote(text = text)
+                 }
+             }
+         }
+
+         private fun saveExportedNote(
+             output: OutputStream,
+             text: String
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             output.sink().buffer().use {
+                 it.writeUtf8(text)
+             }
+         }
+
+         fun loadFileFromIntent(
+             intent: Intent,
+             onLoad: (String?) -> Unit
+         ) = viewModelScope.launch(Dispatchers.IO) {
+             intent.data?.let { uri ->
+                 val input = context.contentResolver.openInputStream(uri) ?: run {
+                     onLoad(null)
+                     return@launch
+                 }
+
+                 input.source().buffer().use {
+                     val text = it.readUtf8()
+                     withContext(Dispatchers.Main) {
+                         onLoad(text)
+                     }
+                 }
+             } ?: onLoad(null)
+         }
+
+         /*********************** Miscellaneous ***********************/
+
+         private suspend fun String.checkLength(
+             onSuccess: suspend () -> Unit
+         ) = when (length) {
+             0 -> toaster.toast(R.string.empty_note)
+             else -> onSuccess()
+         }
+
+         fun migrateData(onComplete: () -> Unit) = viewModelScope.launch {
+             dataMigrator.migrate()
+             onComplete()
+         }
+
+         fun keyboardShortcutPressed(keyCode: Int) = keyboardShortcuts.pressed(keyCode)
+         fun registerKeyboardShortcuts(vararg mappings: Pair<Int, () -> Unit>) =
+             keyboardShortcuts.register(*mappings)
+     }
 
 val viewModelModule = module {
     viewModel {

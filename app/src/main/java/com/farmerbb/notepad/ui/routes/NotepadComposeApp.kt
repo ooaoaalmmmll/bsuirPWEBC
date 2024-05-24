@@ -41,6 +41,11 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Assistant
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Mic
+import java.util.Date
+
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -53,6 +58,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalHapticFeedback
@@ -61,6 +67,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.repeatOnLifecycle
@@ -87,6 +94,7 @@ import com.farmerbb.notepad.ui.components.NotepadTheme
 import com.farmerbb.notepad.ui.components.SaveButton
 import com.farmerbb.notepad.ui.components.SaveDialog
 import com.farmerbb.notepad.ui.components.SelectAllButton
+//import com.farmerbb.notepad.ui.components.VuiButton
 import com.farmerbb.notepad.ui.content.EditNoteContent
 import com.farmerbb.notepad.ui.content.NoteListContent
 import com.farmerbb.notepad.ui.content.ViewNoteContent
@@ -105,6 +113,7 @@ fun NotepadComposeAppRoute() {
     val rtlLayout by vm.prefs.rtlLayout.collectAsState()
     val draftId by vm.savedDraftId.collectAsState()
 
+
     LaunchedEffect(Unit) {
         vm.getSavedDraftId()
     }
@@ -122,7 +131,7 @@ fun NotepadComposeAppRoute() {
         )
     }
 }
-
+@Preview
 @Composable
 private fun NotepadComposeApp(
     vm: NotepadViewModel = getViewModel(),
@@ -167,6 +176,7 @@ private fun NotepadComposeApp(
     var showFirstViewDialog by rememberSaveable { mutableStateOf(false) }
     var showMenu by rememberSaveable { mutableStateOf(false) }
 
+
     val printController = rememberPrintableController()
     val lifecycleOwner = LocalLifecycleOwner.current
     val haptics = LocalHapticFeedback.current
@@ -195,6 +205,7 @@ private fun NotepadComposeApp(
     val updateNavState: (id: Long) -> Unit = { id ->
         navState = if (directEdit || !isSaveButton) Empty else View(id)
     }
+
     val onSave: () -> Unit = {
         vm.saveNote(note.id, text, onSaveComplete)
     }
@@ -217,6 +228,10 @@ private fun NotepadComposeApp(
             showDialogs -> showSaveDialog = true
             else -> onSave()
         }
+    }
+    val lambda: () -> ImageVector = label@{
+        if(navState is Empty) return@label Icons.Filled.Add
+        else return@label Icons.Filled.Assistant
     }
     val onDeleteClick: () -> Unit = {
         showDeleteDialog = true
@@ -519,7 +534,8 @@ private fun NotepadComposeApp(
             }
 
             vm.registerKeyboardShortcuts(
-                KeyEvent.KEYCODE_S to { vm.saveNote(note.id, text, vm::getNote) },
+                KeyEvent.KEYCODE_S to {
+                        vm.saveNote(note.id, text, vm::getNote)},
                 KeyEvent.KEYCODE_D to onDeleteClick,
                 KeyEvent.KEYCODE_H to { onShareClick(text) }
             )
@@ -530,6 +546,7 @@ private fun NotepadComposeApp(
                 }
                 backButton = { BackButton(onBack) }
                 actions = {
+                    //VuiButton{onSaveClick(true, updateNavState) }
                     SaveButton { onSaveClick(true, updateNavState) }
                     DeleteButton(onDeleteClick)
                     NoteViewEditMenu(
@@ -601,23 +618,28 @@ private fun NotepadComposeApp(
             )
         },
         floatingActionButton = {
+
             AnimatedVisibility(
-                visible = navState == Empty && !multiSelectEnabled,
+                visible = navState is Empty && !multiSelectEnabled || (navState is Edit),
                 enter = scaleIn(),
                 exit = scaleOut()
             ) {
                 FloatingActionButton(
-                    onClick = { navState = Edit() },
+                    onClick = { if(navState is Empty){navState = Edit()}
+                                if(navState is Edit){onSaveClick(true, updateNavState)}},
                     backgroundColor = colorResource(id = R.color.primary_dark),
                     content = {
                         Icon(
-                            imageVector = Icons.Filled.Add,
+                            imageVector = lambda(),
+
+                            //(Unit) {} -> Unit)
                             contentDescription = null,
                             tint = Color.White
                         )
                     }
                 )
             }
+
         },
         content = {
             if(isMultiPane) {

@@ -28,8 +28,11 @@ import com.farmerbb.notepad.model.SortOrder.TitleAscending
 import com.farmerbb.notepad.model.SortOrder.TitleDescending
 import com.squareup.sqldelight.runtime.coroutines.asFlow
 import com.squareup.sqldelight.runtime.coroutines.mapToList
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.StateFlow
 import java.util.Date
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.withContext
 
 class NotepadRepository(
     private val database: Database
@@ -80,6 +83,15 @@ class NotepadRepository(
             }
         }
     }
+
+    suspend fun saveNotes(listofnotes_sf: StateFlow<List<Note>>) {
+       withContext(Dispatchers.Main){listofnotes_sf.collect() { listofnotes->
+           listofnotes.forEach{
+               saveNote(it.id, it.text, it.date, it.draftText, {})
+           }
+       }
+   }}
+
 
     suspend fun saveNote(
         id: Long = -1,

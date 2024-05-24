@@ -19,28 +19,85 @@ package com.farmerbb.notepad.android
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.lifecycle.lifecycleScope
+import com.farmerbb.notepad.model.Note
+import com.farmerbb.notepad.model.JsonNote
 import com.farmerbb.notepad.ui.routes.NotepadComposeAppRoute
 import com.farmerbb.notepad.viewmodel.NotepadViewModel
 import com.github.k1rakishou.fsaf.FileChooser
 import com.github.k1rakishou.fsaf.callback.FSAFActivityCallbacks
+import io.github.jan.supabase.SupabaseClient
+import io.github.jan.supabase.createSupabaseClient
+import io.github.jan.supabase.postgrest.Postgrest
+import io.github.jan.supabase.postgrest.postgrest
+import io.ktor.util.Identity.decode
+import kotlinx.coroutines.launch
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonElement
+
+import kotlinx.serialization.json.decodeFromJsonElement
+import kotlinx.serialization.json.decodeToSequence
+import kotlinx.serialization.json.jsonArray
+import kotlinx.serialization.json.jsonPrimitive
 import org.koin.android.ext.android.get
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.util.Date
+import kotlinx.coroutines.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.future.*
+
+
 
 class NotepadActivity: ComponentActivity(), FSAFActivityCallbacks {
     private val vm: NotepadViewModel by viewModel()
     private val fileChooser: FileChooser = get()
+    private val supaBaseURL: String = "https://sofsuvthvjgumbdidhac.supabase.co"
+    private val supaBaseKEY: String = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNvZnN1dnRodmpndW1iZGlkaGFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTUzNDg0NzgsImV4cCI6MjAzMDkyNDQ3OH0.8lKtFA0W6xVHn0plJ9DpHyfMB_DDzFB0MI8ZSnDStvg"
+    private val TABLENAME: String = "notesSupabaseTable"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         fileChooser.setCallbacks(this)
 
         vm.migrateData {
             setContent {
                 NotepadComposeAppRoute()
             }
+        }
+        getData()
+    }
+
+    private fun getData() {
+        vm.fetchLastNoteInLocalDB()
+        lifecycleScope.launch {
+            val client = getClient()
+                Log.v("supabase","clientOK")
+            val supaBaseResponse = client.postgrest[TABLENAME].select()
+                Log.v("supabase","response = "+ supaBaseResponse.toString())
+
+            val deserialized = supaBaseResponse.decodeList<JsonNote>()
+                Log.v("supabase",deserialized.toString())
+            val notes = deserialized.map { jsonNote ->
+                Note(jsonNote)
+            }
+
+            vm.updateNotes(notes)
+            Log.v("supabase",vm.notes.value.toString())
+            vm.chooseAndFetchDB()
+
+        }
+
+    }
+
+   private fun getClient(): SupabaseClient {
+        return createSupabaseClient(supaBaseURL, supaBaseKEY){
+            install(Postgrest)
         }
     }
 
