@@ -161,9 +161,7 @@ import java.util.Date
                  Log.v("isLocalDBUptoDate2", isLocalDBUptoDate.toString())
              }
      }
-            //TODO fix constacy of
-            //                 Log.v("isLocalDBUptoDate", "DISTANT iS UP TO DATE")
-            //                     isLocalDBUptoDate = false
+
 
 
          suspend fun cpyDB() {
