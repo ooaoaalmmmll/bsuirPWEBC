@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>Smallest</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Largest</item>
+    </string-array>
+    <string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+    <string-array name="sort_by_list">
+        <item>Date (newest first)</item>
+        <item>Date (oldest first)</item>
+        <item>Name (A to Z)</item>
+        <item>Name (Z to A)</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eve gidiş yolunu göster"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Yukarı git"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Bitti"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AÇ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"sil"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Üst Karakter+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"boşluk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menü+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ara…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Arama sorgusu"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ara"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Sorguyu gönder"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sesli arama"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_discard">Gözardı</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="action_export">Dışa aktar</string>
+    <string name="action_export_filename">Dışa aktarılan dosya adı</string>
+    <string name="action_font_size">Yazı boyutu</string>
+    <string name="action_new">Yeni Not</string>
+    <string name="action_print">Yazdır</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_select_all">Hepsini seç</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="action_share">Paylaş</string>
+    <string name="action_sort_by">Sıralama ölçütü</string>
+    <string name="action_start_selection">Notları seç</string>
+    <string name="action_theme">Tema</string>
+    <string name="app_name">Not Defteri</string>
+    <string name="app_name_debug">Not Defteri (Hata Ayıklama)</string>
+    <string name="cab_note_selected">%d Not seçildi</string>
+    <string name="cab_notes_selected">%d Notlar seçildi</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Yanıtla"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Reddet"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Kapat"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Gelen arama"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Devam eden arama"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Gelen arama süzülüyor"</string>
+    <string name="changes_discarded">Değişiklikler silindi</string>
+    <string name="check_for_updates">Güncellemeleri kontrol et</string>
+    <string msgid="406453423630273620" name="close_drawer">"Gezinme menüsünü kapat"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Sayfayı kapat"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Etkinleştir</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play hizmetlerini etkinleştirmezseniz %1$s çalışmaz.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play hizmetlerini etkinleştirin</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Yükle</string>
+    <string name="common_google_play_services_install_text">%1$s, şu anda cihazınızda bulunmayan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play hizmetlerini edinin</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play hizmetlerinin kullanılabilirliği</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Hizmetleri hatası</string>
+    <string name="common_google_play_services_unknown_issue">%1$s, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s, Google Play hizmetleri olmadan çalışmaz ve bu hizmetler cihazınız tarafından desteklenmiyor.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Güncelle</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play hizmetlerini güncellemezseniz %1$s çalışmayacak.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play hizmetlerini güncelleyin</string>
+    <string name="common_google_play_services_updating_text">%1$s, şu anda güncellenmekte olan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play hizmetlerinin yeni sürümü gerekiyor. Kendisini kısa süre içinde güncelleyecektir.</string>
+    <string name="common_open_on_phone">Telefonda aç</string>
+    <string name="common_signin_button_text">Oturum aç</string>
+    <string name="common_signin_button_text_long">Google\'da oturum aç</string>
+    <string msgid="6083905920877235314" name="copy">"Kopyala"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Geçersiz giriş"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Pop-up Pencere"</string>
+    <string name="dialog_about_message">"Not Defteri, basit bir not alma uygulamasıdır.
+
+© %d Braden Farmer
+App logo by Tobaloidee"</string>
+    <string name="dialog_about_title">Hakkında</string>
+    <string name="dialog_are_you_sure">Silmek istediğinizden emin misiniz?</string>
+    <string name="dialog_delete_button_title">Notu sil</string>
+    <string name="dialog_delete_button_title_plural">Notları sil</string>
+    <string name="dialog_save_button_title">Değişiklikleri kaydet</string>
+    <string name="dialog_save_changes">Değişikliklerinizi kaydetmek istiyor musunuz?</string>
+    <string name="document">%1$s Belge</string>
+    <string name="double_tap">İpucu: Düzenleme moduna geçmek için metne iki kez dokunun</string>
+    <string name="draft_restored">Taslak geri yüklendi</string>
+    <string name="draft_saved">Taslak kaydedildi</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Açılır menü"</string>
+    <string name="edit_text">Metin eklemek için yazın</string>
+    <string name="empty_note">Lütfen bir metin girin!</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Gelişmiş"</string>
+    <string name="first_run">"Not Defterine Hoş Geldiniz!
+
+Bir not oluşturmak için Yeni Not düğmesine (artı işareti) tıklayın."</string>
+    <string name="first_view">Kaydedilmiş bir notu düzenlemek için metne çift dokunun veya Düzenle düğmesini (kalem) tıklayın</string>
+    <string name="import_notes">İçe aktar</string>
+    <string msgid="6827826412747255547" name="in_progress">"Devam ediyor"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Kısmi olarak kontrol edildi"</string>
+    <string name="loading_external_file">Harici dosyaların yüklenmesi desteklenmiyor</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Gezinme menüsü"</string>
+    <string name="no_notes_found">Not bulunamadı</string>
+    <string name="no_notes_to_delete">Silinmek için not seçilmedi!</string>
+    <string name="no_notes_to_export">Dışa aktarmak için not seçilmedi</string>
+    <string name="no_notes_to_select">Seçilecek not yok!</string>
+    <string msgid="6610465462668679431" name="not_selected">"Seçili değil"</string>
+    <string msgid="6573031135582639649" name="not_set">"Ayarlanmadı"</string>
+    <string name="note_deleted">Not silindi</string>
+    <string name="note_exported_to">Not başarıyla dışa aktarıldı</string>
+    <string name="note_imported_successfully">Not başarıyla içe aktarıldı</string>
+    <string name="note_saved">Not kaydedildi</string>
+    <string name="notes_deleted">Notlar silindi</string>
+    <string name="notes_exported_to">Notlar başarıyla dışa aktarıldı</string>
+    <string name="notes_imported_successfully">Notlar başarıyla içe aktarıldı</string>
+    <string msgid="875452955155264703" name="off">"Kapalı"</string>
+    <string msgid="8655164131929253426" name="on">"Açık"</string>
+    <string name="pref_title_direct_edit">Notları doğrudan düzenleyin</string>
+    <string name="pref_title_font_type">Font type</string>
+    <string name="pref_title_markdown">Markdown/HTML desteği</string>
+    <string name="pref_title_show_date">Tarih / Saat göster</string>
+    <string name="pref_title_show_dialogs">Kaydetmeden önce sor</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" panoya kopyalandı."</string>
+    <string msgid="5941395253238309765" name="range_end">"Aralık sonu"</string>
+    <string msgid="7097486360902471446" name="range_start">"Aralık başlangıcı"</string>
+    <string name="rtl_layout">Right-to-left layout</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>
+    <string msgid="6043586758067023" name="selected">"Seçili"</string>
+    <string name="send_to">Notu paylaş…</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string msgid="2561197295334830845" name="switch_role">"Anahtar"</string>
+    <string msgid="1672349317127674378" name="tab">"Sekme"</string>
+    <string msgid="5946805113151406391" name="template_percent">"Yüzde <ns1:g id="PERCENTAGE">%1$d</ns1:g>."</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"KAPALI"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"AÇIK"</string>
+</resources>

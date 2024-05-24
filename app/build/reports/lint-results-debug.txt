@@ -1,0 +1,147 @@
+D:\WORK\kotlin\Notepad\app\src\debug\res\xml\shortcuts.xml:19: Warning: Attribute shortcutId is only used in API level 25 and higher (current min is 21) [UnusedAttribute]
+        android:shortcutId="new_note"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\WORK\kotlin\Notepad\app\src\debug\res\xml\shortcuts.xml:22: Warning: Attribute shortcutShortLabel is only used in API level 25 and higher (current min is 21) [UnusedAttribute]
+        android:shortcutShortLabel="@string/action_new">
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\android\NotepadActivity.kt:78: Error: ComponentActivity.dispatchKeyShortcutEvent can only be called from within the same library group prefix (referenced groupId=androidx.core with prefix androidx from groupId=Notepad) [RestrictedApi]
+    override fun dispatchKeyShortcutEvent(event: KeyEvent): Boolean {
+                 ~~~~~~~~~~~~~~~~~~~~~~~~
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\android\NotepadActivity.kt:82: Error: ComponentActivity.dispatchKeyShortcutEvent can only be called from within the same library group prefix (referenced groupId=androidx.core with prefix androidx from groupId=Notepad) [RestrictedApi]
+            super.dispatchKeyShortcutEvent(event)
+                  ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RestrictedApi":
+   This API has been flagged with a restriction that has not been met.
+
+   Examples of API restrictions:
+   * Method can only be invoked by a subclass
+   * Method can only be accessed from within the same library (defined by the
+   Gradle library group id)
+   * Method can only be accessed from tests.
+
+   You can add your own API restrictions with the @RestrictTo annotation.
+
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\ui\content\NoteListContent.kt:66: Warning: Composable functions with a return type should start with a lowercase letter [ComposableNaming from androidx.compose.runtime]
+fun RememberNoteListScrollState(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ComposableNaming":
+   @Composable functions without a return type should use similar naming to
+   classes, starting with an uppercase letter and ending with a noun.
+   @Composable functions with a return type should be treated as normal Kotlin
+   functions, starting with a lowercase letter.
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.runtime
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\ui\previews\EditNotePreview.kt:51: Error: Content padding parameter it is not used [UnusedMaterialScaffoldPaddingParameter from androidx.compose.material]
+        content = {
+                  ^
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\ui\previews\NoteListPreview.kt:44: Error: Content padding parameter it is not used [UnusedMaterialScaffoldPaddingParameter from androidx.compose.material]
+        content = {
+                  ^
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\ui\routes\NotepadComposeApp.kt:622: Error: Content padding parameter it is not used [UnusedMaterialScaffoldPaddingParameter from androidx.compose.material]
+        content = {
+                  ^
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\ui\routes\StandaloneEditor.kt:153: Error: Content padding parameter it is not used [UnusedMaterialScaffoldPaddingParameter from androidx.compose.material]
+        content = {
+                  ^
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\ui\previews\ViewNotePreview.kt:51: Error: Content padding parameter it is not used [UnusedMaterialScaffoldPaddingParameter from androidx.compose.material]
+        content = { ViewNoteContent(note.text) }
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedMaterialScaffoldPaddingParameter":
+   The content lambda in Scaffold has a padding parameter which will include
+   any inner padding for the content due to app bars. If this parameter is
+   ignored, then content may be obscured by the app bars resulting in visual
+   issues or elements that can't be interacted with.
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.material
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+D:\WORK\kotlin\Notepad\app\src\main\res\values-pt-rBR\strings.xml:83: Warning: "A a" is a common misspelling; did you mean "A"? [Typos]
+        <item>Nome (A a Z)</item>
+                    ^
+
+   Explanation for issues of type "Typos":
+   This check looks through the string definitions, and if it finds any words
+   that look like likely misspellings, they are flagged.
+
+D:\WORK\kotlin\Notepad\app\src\main\res\values\strings.xml:36: Warning: Formatting %d followed by words ("note"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="cab_note_selected">%d note selected</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\WORK\kotlin\Notepad\app\src\main\res\values\strings.xml:37: Warning: Formatting %d followed by words ("notes"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="cab_notes_selected">%d notes selected</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\WORK\kotlin\Notepad\app\src\main\res\values\strings.xml:39: Warning: Formatting %d followed by words ("Braden"): This should probably be a plural rather than a string [PluralsCandidate]
+    <string name="dialog_about_message">Notepad: a simple note-taking app\n\n&#169; %d Braden Farmer\nApp logo by Tobaloidee</string>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "PluralsCandidate":
+   This lint check looks for potential errors in internationalization where
+   you have translated a message which involves a quantity and it looks like
+   other parts of the string may need grammatical changes.
+
+   For example, rather than something like this:
+     <string name="try_again">Try again in %d seconds.</string>
+   you should be using a plural:
+      <plurals name="try_again">
+           <item quantity="one">Try again in %d second</item>
+           <item quantity="other">Try again in %d seconds</item>
+       </plurals>
+   This will ensure that in other languages the right set of translations are
+   provided for the different quantity classes.
+
+   (This check depends on some heuristics, so it may not accurately determine
+   whether a string really should be a quantity. You can use tools:ignore to
+   filter out false positives.
+
+   https://developer.android.com/guide/topics/resources/string-resource.html#Plurals
+
+D:\WORK\kotlin\Notepad\app\src\main\java\com\farmerbb\notepad\viewmodel\NotepadViewModel.kt:360: Warning: This InputStream should be freed up after use with #close() [Recycle]
+            val input = context.contentResolver.openInputStream(uri) ?: run {
+                                                ~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Recycle":
+   Many resources, such as TypedArrays, VelocityTrackers, etc., should be
+   recycled (with a recycle() call) after use. This lint check looks for
+   missing recycle() calls.
+
+D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+7 errors, 9 warnings

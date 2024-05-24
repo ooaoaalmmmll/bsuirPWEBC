@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WORK\kotlin\Notepad\app\src\main\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WORK\kotlin\Notepad\app\src\main\res"><file name="ic_launcher_adaptive_fg" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable\ic_launcher_adaptive_fg.xml" qualifiers="" type="drawable"/><file name="ic_mode_edit_black_24dp" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable\ic_mode_edit_black_24dp.xml" qualifiers="" type="drawable"/><file name="notepad_logo" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable\notepad_logo.xml" qualifiers="" type="drawable"/><file name="shortcut_icon" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable\shortcut_icon.xml" qualifiers="" type="drawable"/><file name="shortcut_icon_background" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable\shortcut_icon_background.xml" qualifiers="" type="drawable"/><file name="ic_mode_edit_black_24dp" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable-anydpi-v26\ic_mode_edit_black_24dp.xml" qualifiers="anydpi-v26" type="drawable"/><file name="shortcut_icon" path="D:\WORK\kotlin\Notepad\app\src\main\res\drawable-anydpi-v26\shortcut_icon.xml" qualifiers="anydpi-v26" type="drawable"/><file name="ic_launcher" path="D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="D:\WORK\kotlin\Notepad\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values\colors.xml" qualifiers=""><color name="primary">#0099CC</color><color name="primary_dark">#0082AD</color><color name="window_background">#FFFFFF</color><color name="window_background_dark">#424242</color><color name="text_color_primary">#000000</color><color name="text_color_primary_dark">#FAFAFA</color><color name="text_color_secondary">#606060</color><color name="text_color_secondary_dark">#EEEEEE</color><color name="ic_launcher_adaptive_bg">#00B5E6</color><color name="app_shortcut_bg">#F5F5F5</color><color name="navbar_color_light">#FFFFFF</color><color name="praise_duarte">#33B5E5</color></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values\donottranslate.xml" qualifiers=""><string-array name="sort_by_list_values">
+        <item>date</item>
+        <item>date-reversed</item>
+        <item>name</item>
+        <item>name-reversed</item>
+    </string-array><string-array name="theme_list_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array><string-array name="font_type_list_values">
+        <item>sans</item>
+        <item>serif</item>
+        <item>monospace</item>
+    </string-array><string-array name="font_size_list_values">
+        <item>smallest</item>
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>largest</item>
+    </string-array><string-array name="exported_filename_list_values">
+        <item>text-only</item>
+        <item>text-timestamp</item>
+        <item>timestamp-text</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values\strings.xml" qualifiers=""><string name="action_cancel">Cancel</string><string name="action_close">Close</string><string name="action_delete">Delete</string><string name="action_discard">Discard</string><string name="action_edit">Edit</string><string name="action_export">Export</string><string name="action_font_size">Font size</string><string name="action_new">New Note</string><string name="action_save">Save</string><string name="action_settings">Settings</string><string name="action_share">Share</string><string name="action_sort_by">Sort notes by</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notepad</string><string name="app_name_debug">Notepad (Debug)</string><string name="cab_note_selected">%d note selected</string><string name="cab_notes_selected">%d notes selected</string><string name="changes_discarded">Changes discarded</string><string name="dialog_about_message">Notepad: a simple note-taking app\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">About Notepad</string><string name="dialog_are_you_sure">Are you sure?</string><string name="dialog_delete_button_title">Delete note</string><string name="dialog_delete_button_title_plural">Delete notes</string><string name="dialog_save_button_title">Save changes</string><string name="dialog_save_changes">Do you want to save your changes?</string><string name="draft_restored">Draft restored</string><string name="draft_saved">Draft saved</string><string name="double_tap">Tip: double-tap text to switch to Edit mode</string><string name="edit_text">Type to add text</string><string name="empty_note">Please enter some text!</string><string name="first_run">Welcome to Notepad!\n\nTo create a note, click the New Note button (plus sign).</string><string name="first_view">To edit a saved note, double-tap the text or click the Edit button (pencil).</string><string name="import_notes">Import notes</string><string name="loading_external_file">Failed loading external content (or content type not supported)</string><string name="no_notes_found">No notes found</string><string name="note_deleted">Note deleted</string><string name="note_exported_to">Note exported successfully</string><string name="note_saved">Note saved</string><string name="notes_deleted">Notes deleted</string><string name="notes_exported_to">Notes exported successfully</string><string name="note_imported_successfully">Note imported successfully</string><string name="notes_imported_successfully">Notes imported successfully</string><string name="pref_title_show_dialogs">Ask before saving</string><string name="send_to">Share note to…</string><string name="pref_title_show_date">Show date/time</string><string name="action_theme">Theme</string><string name="pref_title_direct_edit">Edit notes directly</string><string name="pref_title_markdown">Markdown/HTML support</string><string name="action_print">Print</string><string name="action_start_selection">Select notes</string><string name="action_select_all">Select all</string><string name="no_notes_to_select">No notes to select</string><string name="document">%1$s Document</string><string name="no_notes_to_export">No notes selected to export</string><string name="no_notes_to_delete">No notes selected to delete</string><string name="check_for_updates">Check for Updates</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Date (newest first)</item>
+        <item>Date (oldest first)</item>
+        <item>Name (A to Z)</item>
+        <item>Name (Z to A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Smallest</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Largest</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values\styles_notepad.xml" qualifiers=""><style name="Theme.Notepad" parent="Theme.Notepad.Base"/></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values\styles_notepad_base.xml" qualifiers=""><style name="Theme.Notepad.Base" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:navigationBarColor">@color/text_color_primary</item>
+    </style></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-ar\strings.xml" qualifiers="ar"><string name="app_name">الدَّفتر</string><string name="action_cancel">إلغاء</string><string name="action_close">إغلاق</string><string name="action_delete">حذف</string><string name="action_discard">إتلاف</string><string name="action_edit">تعديل</string><string name="action_export">تصدير</string><string name="action_font_size">حجم الخط</string><string name="action_new">ملاحظة جديدة</string><string name="action_save">حفظ</string><string name="action_settings">إعدادات</string><string name="action_share">مشاركة</string><string name="action_sort_by">فرز الملاحظات من خلال</string><string name="action_export_filename">اسم الملف الذي تمّ تصديره</string><string name="app_name_debug">الدَّفتر (Debug)</string><string name="cab_note_selected">%d " ملاحظةٌ محدّدة"</string><string name="cab_notes_selected">%d ملاحظات محدّدة</string><string name="changes_discarded">تم إتلاف التعديلات</string><string name="dialog_about_message">الدفتر: برنامجٌ بسيطٌ لتسجيل الملاحظات\n\n© %d Braden Farmer\nصمّم الشعار: Tobaloidee\nنقله إلى العربيّة: وسيم الكردي</string><string name="dialog_about_title">نبذة عن برنامج (الدّفتر)</string><string name="dialog_are_you_sure">هل أنت متأكّد؟</string><string name="dialog_delete_button_title">حذف الملحوظة</string><string name="dialog_delete_button_title_plural">حذف الملاحظات</string><string name="dialog_save_button_title">حفظ التعديلات</string><string name="dialog_save_changes">هل تريد حفظ تغييراتك؟</string><string name="draft_restored">تم استرجاع المسودة</string><string name="draft_saved">تم حفظ المسودة</string><string name="double_tap">معلومة: المس الكلام لمستين للانتقال إلى وضع التعديل</string><string name="edit_text">اكتب لإضافة نصّ</string><string name="empty_note">ملاحظةٌ فارغة … فضلًا أدخل نصًّا!</string><string name="first_run">أهلًا بك في تطبيق (الدفتر)!\n\nلفتح ملاحظةٍ جديدة، اضغط زرّ (ملاحظة جديدة) - إشارة الإضافة.</string><string name="first_view">لتعديل ملاحظةٍ محفوظة، اضغط مرتين على نصّها أو اضغط زرّ التعديل (القلم).</string><string name="import_notes">استيراد الملاحظات</string><string name="loading_external_file">فتح الملفات الخارجيّة غير مدعوم.</string><string name="no_notes_found">لا توجد ملاحظات</string><string name="note_deleted">تمّ حذف الملاحظة</string><string name="note_exported_to">تم تصدير الملاحظة بنجاح</string><string name="note_saved">تم حفظ الملاحظة</string><string name="notes_deleted">تم حذف الملاحظات</string><string name="notes_exported_to">تم تصدير الملاحظات</string><string name="note_imported_successfully">تم استيراد الملاحظة</string><string name="notes_imported_successfully">تم استيراد الملاحظات</string><string name="pref_title_show_dialogs">اسأل قبل الحفظ</string><string name="send_to">"شارك الملاحظة مع… "</string><string name="pref_title_show_date">اعرض التاريخ/الوقت</string><string name="action_theme">النسق المظهريّ</string><string name="pref_title_direct_edit">تعديل الملاحظات مباشرةً</string><string name="pref_title_markdown">دعم لغات Markdown و HTML</string><string name="action_print">طباعة</string><string name="action_start_selection">حدّد الملاحظات</string><string name="action_select_all">حدّد الكل</string><string name="no_notes_to_select">لا توجد ملاحظاتٌ ليتم تحديدها</string><string name="document">مستند %1$s</string><string name="no_notes_to_export">لم تُحَدَّد ملاحظاتٌ لتصديرها</string><string name="no_notes_to_delete">لم تُحَدَّد ملاحظاتٌ لحذفها</string><string name="check_for_updates">تحقّق من التحديثات</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Date (newest first)</item>
+        <item>Date (oldest first)</item>
+        <item>Name (A to Z)</item>
+        <item>Name (Z to A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Smallest</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Largest</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-bn\strings.xml" qualifiers="bn"><string name="action_cancel">বাতিল করুন</string><string name="action_close">বন্ধ করুন</string><string name="action_delete">মুছুন</string><string name="action_discard">অগ্রাহ্য করুন</string><string name="action_edit">সম্পাদনা</string><string name="action_export">এক্সপোর্ট</string><string name="action_font_size">ফন্টের আয়তন</string><string name="action_new">নতুন নোট</string><string name="action_save">সংরক্ষণ</string><string name="action_settings">সেটিংস</string><string name="action_share">শেয়ার</string><string name="action_sort_by">নোট বাছাই করুন</string><string name="action_export_filename">এক্সপোর্টকৃত ফাইল নাম</string><string name="app_name">নোটপ্যাড</string><string name="app_name_debug">নোটপ্যাড (ডিবাগ)</string><string name="cab_note_selected">%d নোট নির্বাচিত হয়েছে</string><string name="cab_notes_selected">%d নোটগুলো নির্বাচিত হয়েছে</string><string name="changes_discarded">পরিবর্তন অগ্রাহ্য করা হয়েছে</string><string name="dialog_about_message">নোটপ্যাড: একটা সিম্পল নোট নেয়ার অ্যাপলিকেশন\n\n© %d ব্র্যাডেন ফার্মার\nঅ্যাপ লোগো বানিয়েছে টোবলোইডি</string><string name="dialog_about_title">নোটপ্যাড সম্পর্কে</string><string name="dialog_are_you_sure">আপনি কি নিশ্চিত?</string><string name="dialog_delete_button_title">নোট মুছে ফেলুন</string><string name="dialog_delete_button_title_plural">নোটগুলো মুছে ফেলুন</string><string name="dialog_save_button_title">পরিবর্তন সংরক্ষণ করুন</string><string name="dialog_save_changes">আপনি কি আপনার পরিবর্তন সংরক্ষণ করতে চান?</string><string name="draft_restored">খসড়া পুনরুদ্ধার করুন</string><string name="draft_saved">খসড়া সংরক্ষিত হয়েছে</string><string name="double_tap">টিপ: লেখায় দুবার ট্যাপ করে সম্পাদনা মুডে যান</string><string name="edit_text">লেখা যুক্ত করতে টাইপ করুন</string><string name="empty_note">কিছু লেখা যোগ করুন!</string><string name="first_run">নোটপ্যাডে স্বাগতম!\n\nনোট তৈরী করতে, নিউ নোট বাটনে ক্লিক করুন (প্লাস চিহ্ন)।</string><string name="first_view">সংরক্ষিত নোট সম্পাদনা করতে, লেখাতে দুইবার ট্যাপ করুন (পেন্সিল চিহ্ন)।</string><string name="import_notes"> নোটগুলো ইমপোর্ট করুন</string><string name="loading_external_file">বাইরে ফাইল লোড করা সমর্থন করে না</string><string name="no_notes_found">কোন নোট পাওয়া যায়নি</string><string name="note_deleted">নোটগুলো মুছে ফেলা হয়েছে</string><string name="note_exported_to">নোট সফলভাবে এক্সপোর্ট হয়েছে</string><string name="note_saved">নোটগুলো সংরক্ষিত হয়েছে</string><string name="notes_deleted">নোটগুলো মুছে ফেলা হয়েছে</string><string name="notes_exported_to">নোটগুলো সফলভাবে এক্সপোর্ট করা হয়েছে</string><string name="note_imported_successfully">নোট সফলভাবে ইমপোর্ট করা হয়েছে</string><string name="notes_imported_successfully">নোটগুলো সফলভাবে এক্সপোর্ট করা হয়েছে</string><string name="pref_title_show_dialogs">সংরক্ষণের আগে জিজ্ঞেস করুন</string><string name="send_to">শেয়ার করুন…</string><string name="pref_title_show_date">তারিখ/সময় দেখান</string><string name="action_theme">থিম</string><string name="pref_title_direct_edit">সরাসরি নোটগুলো সম্পাদনা করুন</string><string name="pref_title_markdown">মার্কডাউন/এইচটিএমএল সমর্থন</string><string name="action_print">ছাপান</string><string name="action_start_selection">নোটগুলো নির্বাচন করুন</string><string name="action_select_all">সবগুলো নির্বাচন করুন</string><string name="no_notes_to_select">নির্বাচনের জন্য কোন নোট নেই</string><string name="document">%1$s ডকুমেন্ট</string><string name="no_notes_to_export">এক্সপোর্ট করার জন্য কোন নোট নির্বাচন করা হয়নি</string><string name="no_notes_to_delete">মুছে ফেলার জন্য কোন নোট নির্বাচন করা হয়নি</string><string name="check_for_updates">হালনাগাদ আছে কি না দেখুন</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>তারিখ (একদম নতুন)</item>
+        <item>তারিখ (একদম পুরোনো)</item>
+        <item>নাম (অ থেকে চন্দ্রবিন্দু)</item>
+        <item>নাম (চন্দ্রবিন্দু থেকে অ)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>উজ্জ্বল</item>
+        <item>কৃষ্ণাভ</item>
+    </string-array><string-array name="font_type_list">
+        <item>সানস সিরিফ</item>
+        <item>সেরিফ</item>
+        <item>মনোস্পেস</item>
+    </string-array><string-array name="font_size_list">
+        <item>একদম ছোট</item>
+        <item>ছোট</item>
+        <item>সাধারণ</item>
+        <item>বড়</item>
+        <item>একদম বড়</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>লেখার প্রথম বাক্য</item>
+        <item>প্রথম বাক্য + টাইমস্ট্যাম্প</item>
+        <item>টাইমস্ট্যাম্প + প্রথম বাক্য</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-cs\strings.xml" qualifiers="cs"><string name="action_cancel">Zrušit</string><string name="action_close">Zavřít</string><string name="action_delete">Smazat</string><string name="action_discard">Zahodit</string><string name="action_edit">Upravit</string><string name="action_export">Exportovat</string><string name="action_font_size">Velikost písma</string><string name="action_new">Nová poznámka</string><string name="action_save">Uložit</string><string name="action_settings">Nastavení</string><string name="action_share">Sdílet</string><string name="action_sort_by">Řadit dle</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notepad</string><string name="app_name_debug">Notepad (Debug)</string><string name="cab_note_selected">%d poznámka vybrána</string><string name="cab_notes_selected">%d poznámky vybrány</string><string name="changes_discarded">Změny zrušeny</string><string name="dialog_about_message">Notepad: jednoduchá apka na poznámky\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">O Notepad</string><string name="dialog_are_you_sure">Jste si jistý?</string><string name="dialog_delete_button_title">Smazat poznámku</string><string name="dialog_delete_button_title_plural">Smazat poznámky</string><string name="dialog_save_button_title">Uložit změny</string><string name="dialog_save_changes">Přejete si uložit změny?</string><string name="draft_restored">Koncept obnoven</string><string name="draft_saved">Koncept uložen</string><string name="double_tap">Tip: dvojím klepnutím na text jej můžete upravit</string><string name="edit_text">Pro zadání textu začněte psát</string><string name="empty_note">Něco prosím napište!</string><string name="first_run">Vítejte v Notepadu!\n\nNovou poznámku vytvoříte klepnutím na tlačítko vpravo dole (znak plus).</string><string name="first_view">Poznámku upravíte buďto dvojím klepnutím nebo klepnutím na tlačítko Upravit (ikona tužky).</string><string name="import_notes">Importovat poznámky</string><string name="loading_external_file">Otevírání externích souborů není podporováno</string><string name="no_notes_found">Nenalezeny žádné poznámky</string><string name="note_deleted">Poznámka smazána</string><string name="note_exported_to">Poznámka úspěšně exportována</string><string name="note_saved">Poznámka uložena </string><string name="notes_deleted">Poznámky smazány</string><string name="notes_exported_to">Poznámky úspěšně exportovány</string><string name="note_imported_successfully">Poznámka úspěšně importována</string><string name="notes_imported_successfully">Poznámky úspěšně importovány</string><string name="pref_title_show_dialogs">Před uložením se zeptat</string><string name="send_to">Sdílet pomocí…</string><string name="pref_title_show_date">Zobrazit datum/čas</string><string name="action_theme">Barevné téma</string><string name="pref_title_direct_edit">Upravit poznámky přímo</string><string name="pref_title_markdown">Podpora Markdown/HTML</string><string name="action_print">Tisknout</string><string name="action_start_selection">Vybrat poznámky</string><string name="action_select_all">Vybrat všechny</string><string name="no_notes_to_select">Nic k vybrání</string><string name="document">%1$s Dokument</string><string name="no_notes_to_export">Nejsou vybrány žádné poznámky pro export</string><string name="no_notes_to_delete">Nejsou vybrány žádné poznámky ke smazání</string><string name="check_for_updates">Check for Updates</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Data (nejnovější nejdříve)</item>
+        <item>Data (oldest first)</item>
+        <item>Názvu (A do Z)</item>
+        <item>Názvu (Z do A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Světlé</item>
+        <item>Tmavé</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Nejmenší</item>
+        <item>Malé</item>
+        <item>Normální</item>
+        <item>Velké</item>
+        <item>Největší</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-de\strings.xml" qualifiers="de"><string name="action_cancel">Abbrechen</string><string name="action_close">Schließen</string><string name="action_delete">Löschen</string><string name="action_discard">Verwerfen</string><string name="action_edit">Editieren</string><string name="action_export">Exportieren</string><string name="action_font_size">Fontgröße</string><string name="action_new">Neue Notiz</string><string name="action_save">Speichern</string><string name="action_settings">Einstellungen</string><string name="action_share">Teilen</string><string name="action_sort_by">Notizen sortieren nach</string><string name="action_export_filename">Dateiname</string><string name="app_name">Notepad</string><string name="app_name_debug">Notepad (Debug)</string><string name="cab_note_selected">%d ausgewählte Notiz</string><string name="cab_notes_selected">%d ausgewählte Notizen</string><string name="changes_discarded">Änderungen verworfen</string><string name="dialog_about_message">Notepad: eine einfache Anwendung für Notizen\n\n© %d Braden Farmer\nLogo von Tobaloidee</string><string name="dialog_about_title">Über Notepad</string><string name="dialog_are_you_sure">Sind Sie sicher?</string><string name="dialog_delete_button_title">Notiz löschen</string><string name="dialog_delete_button_title_plural">Notizen löschen</string><string name="dialog_save_button_title">Änderungen speichern</string><string name="dialog_save_changes">Wollen Sie Ihre Änderungen speichern?</string><string name="draft_restored">Entwurf wiederhergestellt</string><string name="draft_saved">Entwurf gespeichert</string><string name="double_tap">Hinweis: Doppeltippen auf Text für den Wechsel in den Editiermodus</string><string name="edit_text">Tippen um Text zu ergänzen</string><string name="empty_note">Bitte Text eingeben!</string><string name="first_run">Willkommen bei Notepad!\n\nUm eine neue Notiz zu erstellen, auf den neue-Notiz-Knopf drücken (plus Zeichen).</string><string name="first_view">Um eine gespeicherte Notiz zu editieren, doppeltippen auf den Text oder den Editierknopf (Stift) drücken.</string><string name="import_notes">Notizen importieren</string><string name="loading_external_file">Laden von externen Dateien ist nicht unterstützt</string><string name="no_notes_found">Keine Notizen gefunden</string><string name="note_deleted">Notiz gelöscht</string><string name="note_exported_to">Notiz erfolgreich exportiert</string><string name="note_saved">Notiz gespeichert</string><string name="notes_deleted">Notizen gelöscht</string><string name="notes_exported_to">Notizen erfolgreich exportiert</string><string name="note_imported_successfully">Notiz erfolgreich importiert</string><string name="notes_imported_successfully">Notizen erfolgreich importiert</string><string name="pref_title_show_dialogs">Nachfrage vor dem Speichern</string><string name="send_to">Teile Notiz mit…</string><string name="pref_title_show_date">Datum/Zeit anzeigen</string><string name="action_theme">Thema</string><string name="pref_title_direct_edit">Notizen direkt editieren</string><string name="pref_title_markdown">Markdown/HTML Unterstützung</string><string name="action_print">Drucken</string><string name="action_start_selection">Notizen auswählen</string><string name="action_select_all">Alles auswählen</string><string name="no_notes_to_select">Keine Notizen zur Auswahl</string><string name="document">%1$s Dokument</string><string name="no_notes_to_export">Keine Notizen ausgewählt für Export</string><string name="no_notes_to_delete">Keine Notizen zum Löschen ausgewählt</string><string name="check_for_updates">Nach Updates suchen</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Datum (Neueste zuerst)</item>
+        <item>Datum (Älteste zuerst)</item>
+        <item>Name (A bis Z)</item>
+        <item>Name (Z bis A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Hell</item>
+        <item>Dunkel</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Winzig</item>
+        <item>Klein</item>
+        <item>Normal</item>
+        <item>Groß</item>
+        <item>Größer</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>Erste Textzeile</item>
+        <item>Erste Textzeile + Datum</item>
+        <item>Datum + Erste Textzeile</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-el\strings.xml" qualifiers="el"><string name="action_cancel">Άκυρο</string><string name="action_close">Κλείσιμο</string><string name="action_delete">Διαγραφή</string><string name="action_discard">Απόρριψη</string><string name="action_edit">Διόρθωση</string><string name="action_export">Εξαγωγή</string><string name="action_font_size">Μέγεθος font</string><string name="action_new">Νέα σημείωση</string><string name="action_save">Αποθήκευση</string><string name="action_settings">Ρυθμίσεις</string><string name="action_share">Μοίρασμα</string><string name="action_sort_by">Ταξινόμιση ανά</string><string name="action_export_filename">Όνομα εξαγμένου αρχείου</string><string name="app_name">Σημειώσεις</string><string name="app_name_debug">Notepad (Debug)</string><string name="cab_note_selected">%d σημείωση επιλέχθηκε</string><string name="cab_notes_selected">%d σημειώσεις επιλέχθηκαν</string><string name="changes_discarded">Οι αλλαγές απορρίφθηκαν</string><string name="dialog_about_message">Σημειώσεις: μια απλή εφαρμογή σημειώσεων\n\n© %d Braden Farmer\nΛογότυπο εφαρμογής από Tobaloidee</string><string name="dialog_about_title">Σχετικά με το Σημειώσεις</string><string name="dialog_are_you_sure">Σίγουρα;?</string><string name="dialog_delete_button_title">Διαγραφή σημείωσης</string><string name="dialog_delete_button_title_plural">Διαγραφή σημειώσεων</string><string name="dialog_save_button_title">Αποθήκευση αλλαγών</string><string name="dialog_save_changes">Θέλετε να αποθηκεύσετε τις αλλαγές;</string><string name="draft_restored">Ανακτήθηκε το πρόχειρο</string><string name="draft_saved">Αποθηκεύτηκε το πρόχειρο</string><string name="double_tap">Συμβουλή: εναλλαγή σε κατάσταση επεξεργασίας με διπλό πάτημα στο κείμενο</string><string name="edit_text">Πληκτρολογήστε για προσθήκη κειμένου</string><string name="empty_note">Παρακαλώ βάλτε κάποιο κείμενο!</string><string name="first_run">Καλώς ήλθατε στο Σημειώσεις!\n\nΓια δημιουργία σημείωσης, κάντε κλικ στο κουμπί νέας σημείωσης (σύμβολο συν).</string><string name="first_view">Για επεξεργασία μιας αποθηκευμένης σημείωσης, κάντε διπλό κλικ στο κείμενο ή κάντε κλικ στο κουμπί επεξεργασίας (μολύβι).</string><string name="import_notes">Εισαγωγή σημειώσεων</string><string name="loading_external_file">Η φόρτωση εξωτερικών αρχείων δεν υποστηρίζεται</string><string name="no_notes_found">Δεν βρέθηκαν σημειώσεις</string><string name="note_deleted">Η σημείωση διαγράφηκε</string><string name="note_exported_to">Η σημείωση εξήχθηκε επιτυχώς</string><string name="note_saved">Η σημείωση αποθηκεύτηκε</string><string name="notes_deleted">Οι σημειώσεις διαγράφηκαν</string><string name="notes_exported_to">Οι σημειώσεις εξήχθηκαν με επιτυχία</string><string name="note_imported_successfully">Η σημείωση εισήχθηκε με επιτυχία</string><string name="notes_imported_successfully">Οι σημειώσεις εισήχθηκαν με επιτυχία</string><string name="pref_title_show_dialogs">Ερώτηση πριν την αποθήκευση</string><string name="send_to">Μοίρασμα σημείωσης σε…</string><string name="pref_title_show_date">Εμφάνιση ημερομηνίας/ώρας</string><string name="action_theme">Θέμα</string><string name="pref_title_direct_edit">Άμεση επεξεργασία σημειώσεων</string><string name="pref_title_markdown">Υποστήριξη Markdown/HTML</string><string name="action_print">Εκτύπωση</string><string name="action_start_selection">Επιλογή σημειώσεων</string><string name="action_select_all">Επιλογή όλων</string><string name="no_notes_to_select">Δεν υπάρχουν σημειώσεις για επιλογή</string><string name="document">%1$s έγγραφο</string><string name="no_notes_to_export">Δεν επιλέχθηκαν σημειώσεις για εξαγωγή</string><string name="no_notes_to_delete">Δεν επιλέχθηκαν σημειώσεις για διαγραφή</string><string name="check_for_updates">Έλεγχος για ενημερώσεις</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Ημερομηνία (νεότερη πρώτα)</item>
+        <item>Ημερομηνία (παλαιότερη πρώτα)</item>
+        <item>Όνομα (Α-Ω)</item>
+        <item>Όνομα (Ω-Α)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Ανοιχτό</item>
+        <item>Σκούρο</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Μικρότερα</item>
+        <item>Μικρά</item>
+        <item>Φυσιολογικά</item>
+        <item>Μεγάλα</item>
+        <item>Μεγαλύτερα</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>Πρώτη σειρά του κειμένου</item>
+        <item>Πρώτη σειρά + χρονοσήμανση</item>
+        <item>Χρονοσήμανση + πρώτη σειρά</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-es\strings.xml" qualifiers="es"><string name="action_cancel">Cancelar</string><string name="action_close">Cerrar</string><string name="action_delete">Eliminar</string><string name="action_discard">Descartar</string><string name="action_edit">Editar</string><string name="action_export">Exportar</string><string name="action_font_size">Tamaño de letra</string><string name="action_new">Nota nueva</string><string name="action_save">Guardar</string><string name="action_settings">Configuración</string><string name="action_share">Compartir</string><string name="action_sort_by">Ordenar notas por</string><string name="action_export_filename">Exportado nombre de archivo</string><string name="app_name">Notepad</string><string name="app_name_debug">Notepad (Depuración)</string><string name="cab_note_selected">%d Nota seleccionada</string><string name="cab_notes_selected">%d Notas seleccionadas</string><string name="changes_discarded">Cambios descartados</string><string name="dialog_about_message">Notepad: una app simple de toma de notas\n\n© %d Braden Farmer\nlogotipo de la aplicación por Tobaloidee</string><string name="dialog_about_title">Sobre Notepad</string><string name="dialog_are_you_sure">¿Estás seguro?</string><string name="dialog_delete_button_title">Eliminar nota</string><string name="dialog_delete_button_title_plural">Eliminar notas</string><string name="dialog_save_button_title">Guardar cambios</string><string name="dialog_save_changes">¿Quieres guardar los cambios?</string><string name="draft_restored">Borrador restaurado</string><string name="draft_saved">Borrador guardado</string><string name="double_tap">Consejo: toca dos veces en el texto para cambiar al modo edición</string><string name="edit_text">Digita para añadir texto</string><string name="empty_note">¡Por favor, pon texto!</string><string name="first_run">Bienvenido al Notepad!\n\nPara crear una nota, clica en el botón Nota Nueva (signo de más).</string><string name="first_view">Para editar una nota guardada, toca dos veces en el texto o clica en el botón Editar (lápiz).</string><string name="import_notes">Importar notas</string><string name="loading_external_file">Cargar archivos externos no está soportado</string><string name="no_notes_found">No se han encontrado notas</string><string name="note_deleted">Nota eliminada</string><string name="note_exported_to">Nota exportada exitosamente</string><string name="note_saved">Nota guardada</string><string name="notes_deleted">Notas eliminadas</string><string name="notes_exported_to">Notas exportadas exitosamente</string><string name="note_imported_successfully">Nota importada exitosamente</string><string name="notes_imported_successfully">Notas importadas exitosamente</string><string name="pref_title_show_dialogs">Preguntar antes de guardar</string><string name="send_to">Compartir nota con…</string><string name="pref_title_show_date">Mostrar fecha/hora</string><string name="action_theme">Tema</string><string name="pref_title_direct_edit">Editar notas directamente</string><string name="pref_title_markdown">Soporte para Markdown/HTML</string><string name="action_print">Imprimir</string><string name="action_start_selection">Seleccionar notas</string><string name="action_select_all">Seleccionar todo</string><string name="no_notes_to_select">Ninguna nota que seleccionar</string><string name="document">%1$s Documento</string><string name="no_notes_to_export">Ninguna nota seleccionada para exportar</string><string name="no_notes_to_delete">Ninguna nota seleccionada para eliminar</string><string name="check_for_updates">Comprobar actualizaciones</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Fecha (más reciente primero)</item>
+        <item>Fecha (más antigua primero)</item>
+        <item>Nombre (A a Z)</item>
+        <item>Nombre (Z a A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Claro</item>
+        <item>Oscuro</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Más pequeño</item>
+        <item>Pequeño</item>
+        <item>Normal</item>
+        <item>Grande</item>
+        <item>Más grande</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>Primera línea de texto</item>
+        <item>Primera línea + marca de tiempo</item>
+        <item>Marca de tiempo + primera línea</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-fr\strings.xml" qualifiers="fr"><string name="action_cancel">Annuler</string><string name="action_close">Fermer</string><string name="action_delete">Supprimer</string><string name="action_discard">Annuler</string><string name="action_edit">Editer</string><string name="action_export">Exporter</string><string name="action_font_size">Taille de police</string><string name="action_new">Nouvelle Note</string><string name="action_save">Enregistrer</string><string name="action_settings">Paramètres</string><string name="action_share">Partager</string><string name="action_sort_by">Trier par</string><string name="action_export_filename">Exported filename</string><string name="app_name">Bloc-Notes</string><string name="app_name_debug">@string/app_name</string><string name="cab_note_selected">%d Note sélectionnée</string><string name="cab_notes_selected">%d Notes sélectionnées</string><string name="changes_discarded">Modifications abandonnées</string><string name="dialog_about_message">Bloc-Notes : une application de prise de notes simple\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">A propos de Bloc-Notes</string><string name="dialog_are_you_sure">Etes-vous sûr ?</string><string name="dialog_delete_button_title">Supprimer la note</string><string name="dialog_delete_button_title_plural">Supprimer les notes</string><string name="dialog_save_button_title">Enregistrer les modifications</string><string name="dialog_save_changes">Enregistrer les modifications ?</string><string name="draft_restored">Brouillon restauré</string><string name="draft_saved">Brouillon enregistré</string><string name="double_tap">Astuce : double cliquer sur la note pour l\'éditer</string><string name="edit_text">Saisissez votre texte</string><string name="empty_note">Note vide !</string><string name="first_run">Bienvenue dans Bloc-Notes !\n\nPour créer une note, appuyez sur le bouton Ajouter (+) en haut.</string><string name="first_view">Pour modifier une note, appuyez sur l\'écran ou appuyez sur le bouton Editer (Crayon) en haut.</string><string name="import_notes">Importer des notes</string><string name="loading_external_file">Le chargement de fichier externe est impossible</string><string name="no_notes_found">Aucune note trouvée !</string><string name="note_deleted">Note supprimée</string><string name="note_exported_to">Note exportée avec succès</string><string name="note_saved">Note enregistrée</string><string name="notes_deleted">Notes supprimées</string><string name="notes_exported_to">Notes exportées avec succès</string><string name="note_imported_successfully">Note importée avec succès</string><string name="notes_imported_successfully">Notes importées avec succès</string><string name="pref_title_show_dialogs">Confirmer avant d\'enregistrer</string><string name="send_to">Envoyer à</string><string name="pref_title_show_date">Afficher la date</string><string name="action_theme">Thème</string><string name="pref_title_direct_edit">Editer directement les notes</string><string name="pref_title_markdown">Surligner les liens HTML</string><string name="action_print">Imprimer</string><string name="action_start_selection">Sélectionner les notes</string><string name="action_select_all">Sélectionner tout</string><string name="no_notes_to_select">Pas de note à sélectionner</string><string name="document">%1$s Document</string><string name="no_notes_to_export">Pas de note à exporter</string><string name="no_notes_to_delete">Pas de note à supprimer</string><string name="check_for_updates">Vérifier les mises à jour</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Date (la plus récente en premier)</item>
+        <item>Date (la moins récente en premier)</item>
+        <item>Nom (de A à Z)</item>
+        <item>Nom (de Z à A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Clair</item>
+        <item>Sombre</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Plus petit</item>
+        <item>Petit</item>
+        <item>Normal</item>
+        <item>Grand</item>
+        <item>Plus grand</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-it\strings.xml" qualifiers="it"><string name="action_cancel">Annulla</string><string name="action_close">Chiudi</string><string name="action_delete">Elimina</string><string name="action_discard">Dimentica</string><string name="action_edit">Modifica</string><string name="action_export">Esporta</string><string name="action_font_size">Dimensione carattere</string><string name="action_new">Nuova nota</string><string name="action_save">Salva</string><string name="action_settings">Impostazioni</string><string name="action_share">Condividi</string><string name="action_sort_by">Ordina note per</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notepad</string><string name="app_name_debug">Notepad (Debug)</string><string name="cab_note_selected">%d nota selezionata</string><string name="cab_notes_selected">%d note selezionate</string><string name="changes_discarded">Modifiche annullate</string><string name="dialog_about_message">Notepad: una semplice app per appunti\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">Riguardo a Notepad</string><string name="dialog_are_you_sure">Sei sicuro?</string><string name="dialog_delete_button_title">Elimina nota</string><string name="dialog_delete_button_title_plural">Elimina note</string><string name="dialog_save_button_title">Salva le modifiche</string><string name="dialog_save_changes">Vuoi salvare le modifiche?</string><string name="draft_restored">Bozza riaperta</string><string name="draft_saved">Bozza salvata</string><string name="double_tap">Consiglio: doppio tocco per passare in modalitá Modifica</string><string name="edit_text">Scrivi per aggiungere il testo</string><string name="empty_note">Per favore, inserisci un testo!</string><string name="first_run">Benvenuto in Notepad!\n\nPer creare una nota, clicca sul pulsante Nuova nota (segno più).</string><string name="first_view">Per modificare una nota salvata, fai doppio-tocco sul testo o clicca il pulsante Modifica (matita).</string><string name="import_notes">Importa note</string><string name="loading_external_file">Il caricamento di file esterni non è supportato</string><string name="no_notes_found">Nessuna nota trovata</string><string name="note_deleted">Nota eliminata</string><string name="note_exported_to">Nota esportata con successo</string><string name="note_saved">Nota salvata</string><string name="notes_deleted">Note eliminate</string><string name="notes_exported_to">Note esportate con successo</string><string name="note_imported_successfully">Nota importata con successo</string><string name="notes_imported_successfully">Note importate con successo</string><string name="pref_title_show_dialogs">Chiedi prima di salvare</string><string name="send_to">Condividi nota con…</string><string name="pref_title_show_date">Mostra data/ora</string><string name="action_theme">Tema</string><string name="pref_title_direct_edit">Modifica note direttamente</string><string name="pref_title_markdown">Supporto Markdown/HTML</string><string name="action_print">Stampa</string><string name="action_start_selection">Seleziona note</string><string name="action_select_all">Seleziona tutte</string><string name="no_notes_to_select">Nessuna nota da selezionare</string><string name="document">%1$s Documento</string><string name="no_notes_to_export">Nessuna nota selezionata da esportare</string><string name="no_notes_to_delete">Nessuna nota selezionata da cancellare</string><string name="check_for_updates">Controlla aggiornamenti</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Data (prima le più recenti)</item>
+        <item>Data (prima le più vecchie)</item>
+        <item>Nome (A-Z)</item>
+        <item>Nome (Z-A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Chiaro</item>
+        <item>Scuro</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Molto piccolo</item>
+        <item>Piccolo</item>
+        <item>Normale</item>
+        <item>Grande</item>
+        <item>Molto grande</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-ja\strings.xml" qualifiers="ja"><string name="action_cancel">取り消す</string><string name="action_close">閉じる</string><string name="action_delete">削除</string><string name="action_discard">保存しない</string><string name="action_edit">編集</string><string name="action_export">アプリ外に保存</string><string name="action_font_size">文字の大きさ</string><string name="action_new">新規メモ</string><string name="action_save">保存</string><string name="action_settings">設定</string><string name="action_share">シェアする</string><string name="action_sort_by">並べ替え</string><string name="action_export_filename">アプリ外保存時のファイル名</string><string name="app_name">メモ帳</string><string name="app_name_debug">メモ帳 (デバッグ)</string><string name="cab_note_selected">%d つを選択中</string><string name="cab_notes_selected">%d つを選択中</string><string name="changes_discarded">放棄された変更</string><string name="dialog_about_message">メモ帳: シンプルなメモ帳アプリ\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">このアプリについて</string><string name="dialog_are_you_sure">良いですか?</string><string name="dialog_delete_button_title">メモを削除</string><string name="dialog_delete_button_title_plural">メモを削除</string><string name="dialog_save_button_title">変更を保存</string><string name="dialog_save_changes">変更を保存しますか?</string><string name="draft_restored">下書きを再編集</string><string name="draft_saved">下書きを保存</string><string name="double_tap">テキストをダブルタップで編集します</string><string name="edit_text">入力すると本文に追加します</string><string name="empty_note">空欄です。何か入力して下さい</string><string name="first_run">始めまして!\n\nメモを作成するには、プラスマークをクリックして下さい</string><string name="first_view">既存メモの再編集には、本文をダブルタップするか、鉛筆アイコンをクリックして下さい</string><string name="import_notes">アプリ外のファイルを読み込む</string><string name="loading_external_file">外部ファイルの読み込みには対応していません</string><string name="no_notes_found">メモがありません</string><string name="note_deleted">削除しました</string><string name="note_exported_to">出力に成功</string><string name="note_saved">保存しました</string><string name="notes_deleted">削除しました</string><string name="notes_exported_to">出力に成功</string><string name="note_imported_successfully">読み込みました</string><string name="notes_imported_successfully">読み込みました</string><string name="pref_title_show_dialogs">保存時に確認する</string><string name="send_to">メモをシェア…</string><string name="pref_title_show_date">日時を表示</string><string name="action_theme">テーマ</string><string name="pref_title_direct_edit">直接メモを編集</string><string name="pref_title_markdown">Markdown/HTMLに対応</string><string name="action_print">印刷</string><string name="action_start_selection">メモを選択</string><string name="action_select_all">すべてを選択</string><string name="no_notes_to_select">選択の対象がありません</string><string name="document">%1$s 文書</string><string name="no_notes_to_export">選択されていません</string><string name="no_notes_to_delete">選択されていません</string><string name="check_for_updates">アプデを確認</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>日付順 (最新が先頭)</item>
+        <item>日付順 (最新が最後)</item>
+        <item>名前順 (A - Z)</item>
+        <item>名前順 (Z - A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>明テーマ</item>
+        <item>暗テーマ</item>
+    </string-array><string-array name="font_type_list">
+        <item>サンセリフ</item>
+        <item>セリフ</item>
+        <item>固定幅</item>
+    </string-array><string-array name="font_size_list">
+        <item>極小</item>
+        <item>小</item>
+        <item>普通</item>
+        <item>大</item>
+        <item>極大</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>本文の第1行</item>
+        <item>第1行+日付</item>
+        <item>日付+第1行</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-ko\strings.xml" qualifiers="ko"><string name="action_cancel">취소</string><string name="action_close">닫기</string><string name="action_delete">삭제</string><string name="action_discard">버리기</string><string name="action_edit">편집</string><string name="action_export">보내기</string><string name="action_font_size">Font size</string><string name="action_new">새 메모</string><string name="action_save">저장</string><string name="action_settings">설정</string><string name="action_share">공유</string><string name="action_export_filename">Exported filename</string><string name="action_sort_by">정렬 순서</string><string name="app_name">노트패드</string><string name="app_name_debug">@string/app_name</string><string name="cab_note_selected">%d 선택됨</string><string name="cab_notes_selected">%d 선택됨</string><string name="changes_discarded">변경 취소됨</string><string name="dialog_about_message">Notepad: a simple note-taking app\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">노트패드 정보</string><string name="dialog_are_you_sure">노트를 삭제하시겠어요?</string><string name="dialog_delete_button_title">노트 삭제</string><string name="dialog_delete_button_title_plural">노트 삭제</string><string name="dialog_save_button_title">변경 저장</string><string name="dialog_save_changes">변경 내용을 저장하시겠어요?</string><string name="draft_restored">임시 복구됨</string><string name="draft_saved">임시 저장됨</string><string name="double_tap">팁: 문장 더블-탭으로 편집하기</string><string name="edit_text">여기에 메모 내용을 입력하세요</string><string name="empty_note">메모 내용이 없습니다</string><string name="first_run">노트패드입니다!\n\n새 노트를 생성하려면 + 기호를 탭 하세요</string><string name="first_view">메모를 수정하려면 본문을 더블-탭 하거나 연필을 탭 하세요</string><string name="import_notes">노트 가져오기</string><string name="loading_external_file">외부 파일을 읽기는 지원하지 않음</string><string name="no_notes_found">새 노트를 만드세요</string><string name="note_deleted">노트 삭제됨</string><string name="note_exported_to">노트 보내기</string><string name="note_saved">노트 저장됨</string><string name="notes_deleted">노트 삭제</string><string name="notes_exported_to">노트 보내기</string><string name="note_imported_successfully">노트 불러오기 성공</string><string name="notes_imported_successfully">노트 불러오기 성공</string><string name="pref_title_show_dialogs">저장전에 물어보기</string><string name="send_to">노트 공유하기…</string><string name="pref_title_show_date">날짜/시간 보이기</string><string name="action_theme">Theme</string><string name="pref_title_direct_edit">Edit notes directly</string><string name="pref_title_markdown">Markdown/HTML support</string><string name="action_print">Print</string><string name="action_start_selection">Select notes</string><string name="action_select_all">Select all</string><string name="no_notes_to_select">No notes to select</string><string name="document">%1$s Document</string><string name="no_notes_to_export">No notes selected to export</string><string name="no_notes_to_delete">No notes selected to delete</string><string name="check_for_updates">Check for Updates</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>날짜 (내림차순)</item>
+        <item>Date (oldest first</item>
+        <item>내용 (가나다순)</item>
+        <item>Name (Z to A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Smallest</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Largest</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-nl\strings.xml" qualifiers="nl"><string name="action_cancel">Annuleren</string><string name="action_close">Sluiten</string><string name="action_delete">Verwijderen</string><string name="action_discard">Verwerpen</string><string name="action_edit">Bewerken</string><string name="action_export">Exporteren</string><string name="action_font_size">Lettertypegrootte</string><string name="action_new">Nieuwe notitie</string><string name="action_save">Opslaan</string><string name="action_settings">Instellingen</string><string name="action_share">Delen</string><string name="action_sort_by">Sorteren op</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notitieblok</string><string name="app_name_debug">Notitieblok (foutopsporing)</string><string name="cab_note_selected">%d notitie geselecteerd</string><string name="cab_notes_selected">%d notities geselecteerd</string><string name="changes_discarded">Wijzigingen verworpen</string><string name="dialog_about_message">Notitieblok: een eenvoudige notitie-app\n\n© %d Braden Farmer\nApp-logo door Tobaloidee</string><string name="dialog_about_title">Over Notitieblok</string><string name="dialog_are_you_sure">Weet je het zeker?</string><string name="dialog_delete_button_title">Notitie verwijderen</string><string name="dialog_delete_button_title_plural">Notities verwijderen</string><string name="dialog_save_button_title">Opslaan</string><string name="dialog_save_changes">Wil je de wijzigingen opslaan?</string><string name="draft_restored">Concept hersteld</string><string name="draft_saved">Concept opgeslagen</string><string name="double_tap">Tip: dubbeltik op de tekst om de bewerkmodus te openen</string><string name="edit_text">Typ om tekst in te voeren</string><string name="empty_note">Voer tekst in!</string><string name="first_run">Welkom bij Notitieblok!\n\nVoeg een notitie toe door op de knop Nieuwe Notite (plus-teken) te drukken.</string><string name="first_view">Dubbeltik op een tekst om deze te bewerken of druk op de bewerkknop (potlood).</string><string name="import_notes">Notities importeren</string><string name="loading_external_file">Laden van externe bestanden niet toegestaan</string><string name="no_notes_found">Geen notities aangetroffen</string><string name="note_deleted">Notitie verwijderd</string><string name="note_exported_to">Notitie geëxporteerd</string><string name="note_saved">Notitie opgelagen</string><string name="notes_deleted">Notities verwijderd</string><string name="notes_exported_to">Notities geëxporteerd</string><string name="note_imported_successfully">Notitie geïmporteerd</string><string name="notes_imported_successfully">Notities geïmporteerd</string><string name="pref_title_show_dialogs">Vragen alvorens op te slaan</string><string name="send_to">Notitie delen met…</string><string name="pref_title_show_date">Datum/tijd tonen</string><string name="action_theme">Thema</string><string name="pref_title_direct_edit">Notities direct bewerken</string><string name="pref_title_markdown">Markdown/HTML-ondersteuning</string><string name="action_print">Afdrukken</string><string name="action_start_selection">Notities selecteren</string><string name="action_select_all">Alles selecteren</string><string name="no_notes_to_select">Geen te selecteren notities</string><string name="document">%1$s document</string><string name="no_notes_to_export">Geen te exporteren notities geselecteerd</string><string name="no_notes_to_delete">Geen te verwijderen notities geselecteerd</string><string name="check_for_updates">Check for Updates</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Datum (recentst eerst)</item>
+        <item>Datum (oldest first)</item>
+        <item>Naam (A-Z)</item>
+        <item>Naam (Z-A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Licht</item>
+        <item>Donker</item>
+    </string-array><string-array name="font_type_list">
+        <item>Schreefloos</item>
+        <item>Met schreef</item>
+        <item>Vaste breedte</item>
+    </string-array><string-array name="font_size_list">
+        <item>Kleinst</item>
+        <item>Klein</item>
+        <item>Normaal</item>
+        <item>Groot</item>
+        <item>Grootst</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-no\strings.xml" qualifiers="no"><string name="action_cancel">Avbryt</string><string name="action_close">Lukk</string><string name="action_delete">Slett</string><string name="action_discard">Forkast</string><string name="action_edit">Endre</string><string name="action_export">Eksporter</string><string name="action_font_size">Skriftstørrelse</string><string name="action_new">Nytt notat</string><string name="action_save">algre</string><string name="action_settings">Instillinger</string><string name="action_share">Del</string><string name="action_sort_by">Sorter notater etter</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notatblokk</string><string name="app_name_debug">Notatblokk (Debug)</string><string name="cab_note_selected">%d notat markert</string><string name="cab_notes_selected">%d notater markert</string><string name="changes_discarded">Endringer forkastet</string><string name="dialog_about_message">Notatblokk: en enkel app som lar deg ta notater\n\n© %d Braden Farmer\nApp logo av Tobaloidee</string><string name="dialog_about_title">Om Notatblokk</string><string name="dialog_are_you_sure">Er du sikker?</string><string name="dialog_delete_button_title">Slett notat</string><string name="dialog_delete_button_title_plural">Slett ntoater</string><string name="dialog_save_button_title">Lagre endringer</string><string name="dialog_save_changes">Vil du lagre endringene dine?</string><string name="draft_restored">Utkast gjenopprettet</string><string name="draft_saved">Utkast lagret</string><string name="double_tap">Tips: dobbeltrykk på teksten for å bytte til redigeringsmodus</string><string name="edit_text">Skriv for å legge til tekst</string><string name="empty_note">Vennligst skriv noe tekst!</string><string name="first_run">Velkommen til Notatblokk!\n\nFor å lage et notat, klikk på Nytt notat-knappen (plusstegnet).</string><string name="first_view">For å redigere et lagret notat, dobbelklikk teksten eller klikk på rediger-knappen (blyanten).</string><string name="import_notes">Importer notater</string><string name="loading_external_file">Lasting av eksterne filer er ikke støttet</string><string name="no_notes_found">Ingen notater funnet</string><string name="note_deleted">Notat slettet</string><string name="note_exported_to">Eksportering av notat vellykket</string><string name="note_saved">Notat lagret</string><string name="notes_deleted">Notater slettet</string><string name="notes_exported_to">Eksportering av notater vellykket</string><string name="note_imported_successfully">Importering av notat vellykket</string><string name="notes_imported_successfully">Importering av notater vellykket</string><string name="pref_title_show_dialogs">Spør før lagring</string><string name="send_to">Del notat til…</string><string name="pref_title_show_date">Vis dato/tid</string><string name="action_theme">Tema</string><string name="pref_title_direct_edit">Rediger notater direkte</string><string name="pref_title_markdown">Markdown/HTML-støtte</string><string name="action_print">Skriv ut</string><string name="action_start_selection">Marker notater</string><string name="action_select_all">Marker alle</string><string name="no_notes_to_select">Ingen notater å markere</string><string name="document">%1$s dokument</string><string name="no_notes_to_export">Ingen notater markert for eksportering</string><string name="no_notes_to_delete">Ingen notater markert for sletting</string><string name="check_for_updates">Se etter oppdateringer</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Dato (nyeste first)</item>
+        <item>Dato (eldste first)</item>
+        <item>Navn (A to Å)</item>
+        <item>Navn (Å to A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Lyst</item>
+        <item>Mørkt</item>
+    </string-array><string-array name="font_type_list">
+        <item>Grotesk</item>
+        <item>Seriffer</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Minst</item>
+        <item>Liten</item>
+        <item>Normal</item>
+        <item>Stor</item>
+        <item>Størst</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-pl\strings.xml" qualifiers="pl"><string name="action_cancel">Anuluj</string><string name="action_close">Zamknij</string><string name="action_delete">Usuń</string><string name="action_discard">Odrzuć</string><string name="action_edit">Edytuj</string><string name="action_export">Eksportuj</string><string name="action_font_size">Rozmiar czcionki</string><string name="action_new">Nowa notatka</string><string name="action_save">Zapisz</string><string name="action_settings">Ustawienia</string><string name="action_share">Udostępnij</string><string name="action_sort_by">Sortuj notatki według</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notatnik</string><string name="app_name_debug">Notatnik (debugowanie)</string><string name="cab_note_selected">%d notatka zaznaczona</string><string name="cab_notes_selected">%d notatki zaznaczone</string><string name="changes_discarded">Zmiany odrzucone</string><string name="dialog_about_message">Notatnik: prosta aplikacja do sporządzania notatek\n\n© %d Braden Farmer\nLogo aplikacji autorstwa Tobaloidee</string><string name="dialog_about_title">O Notatniku</string><string name="dialog_are_you_sure">Czy jesteś pewien?</string><string name="dialog_delete_button_title">Usuń notatkę</string><string name="dialog_delete_button_title_plural">Usuń notatki</string><string name="dialog_save_button_title">Zapisz zmiany</string><string name="dialog_save_changes">Czy chcesz zapisać zmiany?</string><string name="draft_restored">Wersja robocza przywrócona</string><string name="draft_saved">Wersja robocza zapisana</string><string name="double_tap">Wskazówka: dotknij dwa razy, by przełączyć się do trybu edycji</string><string name="edit_text">Napisz, by wprowadzić tekst</string><string name="empty_note">Wprowadź jakiś tekst!</string><string name="first_run">Witamy w Notatniku!\n\nAby stworzyć notatkę, dotknij przycisku "Nowa Notatka" (znak plus).</string><string name="first_view">Aby zmienić zapisaną notatkę, dotknij dwa razy tekstu albo przycisku "Edytuj" (symbol ołówka).</string><string name="import_notes">Zaimportuj notatki</string><string name="loading_external_file">Wczytywanie zewnętrznych plików nie jest obsługiwane</string><string name="no_notes_found">Nie znaleziono notatek</string><string name="note_deleted">Notatka usunięta</string><string name="note_exported_to">Notatka wyeksportowana pomyślnie</string><string name="note_saved">Notatka zapisana</string><string name="notes_deleted">Notatki usunięte</string><string name="notes_exported_to">Notatki wyeksportowane pomyślnie</string><string name="note_imported_successfully">Notatka zaimportowana pomyślnie</string><string name="notes_imported_successfully">Notatki zaimportowane pomyślnie</string><string name="pref_title_show_dialogs">Pytaj przed zapisaniem</string><string name="send_to">Udostępnij za pomocą…</string><string name="pref_title_show_date">Pokazuj datę/czas</string><string name="action_theme">Motyw</string><string name="pref_title_direct_edit">Edytuj notatki od razu</string><string name="pref_title_markdown">Obsługa języków Markdown/HTML</string><string name="action_print">Drukuj</string><string name="action_start_selection">Zaznacz notatki</string><string name="action_select_all">Zaznacz wszystkie</string><string name="no_notes_to_select">Nie zaznaczono żadnych notatek</string><string name="document">%1$s dokument</string><string name="no_notes_to_export">Nie zaznaczono notatek do wyeksportowania</string><string name="no_notes_to_delete">Nie zaznaczono notatek do usunięcia</string><string name="check_for_updates">Sprawdź aktualizacje</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Daty (najnowsze na początku)</item>
+        <item>Daty (najstarsze na początku)</item>
+        <item>Nazwy (Od A do Z)</item>
+        <item>Nazwy (Od Z do A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Jasny</item>
+        <item>Ciemny</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans Serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Najmniejsza</item>
+        <item>Mała</item>
+        <item>Normalna</item>
+        <item>Duża</item>
+        <item>Największa</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-pt-rBR\strings.xml" qualifiers="pt-rBR"><string name="action_cancel">Cancelar</string><string name="action_close">Fechar</string><string name="action_delete">Apagar</string><string name="action_discard">Descartar</string><string name="action_edit">Editar</string><string name="action_export">Exportar</string><string name="action_font_size">Tamanho da fonte</string><string name="action_new">Nova Nota</string><string name="action_save">Salvar</string><string name="action_settings">Configurações</string><string name="action_share">Compartilhar</string><string name="action_sort_by">Ordenar notas por</string><string name="action_export_filename">Exported filename</string><string name="app_name">Notepad</string><string name="app_name_debug">Notepad (Depuração)</string><string name="cab_note_selected">%d nota selecionada</string><string name="cab_notes_selected">%d notas selecionadas</string><string name="changes_discarded">Alterações descartadas</string><string name="dialog_about_message">Notepad: um simples aplicativo de anotações\n\n© %d Braden Farmer\nLogotipo do aplicativo por Tobaloidee</string><string name="dialog_about_title">Sobre o Notepad</string><string name="dialog_are_you_sure">Você tem certeza?</string><string name="dialog_delete_button_title">Apagar nota</string><string name="dialog_delete_button_title_plural">Apagar notas</string><string name="dialog_save_button_title">Salvar alterações</string><string name="dialog_save_changes">Você quer salvar suas alterações?</string><string name="draft_restored">Rascunho restaurado</string><string name="draft_saved">Rascunho salvo</string><string name="double_tap">Dica: toque duas vezes no texto para alternar para o modo de Edição</string><string name="edit_text">Digite para inserir texto</string><string name="empty_note">Por favor, insira algum texto!</string><string name="first_run">Bem-vindo ao Notepad!\n\nPara criar uma nota, clique no botão Nova Nota (sinal de mais).</string><string name="first_view">Para editar uma nota salva, toque duas vezes no texto ou clique no botão Editar (lápis)</string><string name="import_notes">Importar notas</string><string name="loading_external_file">Carregamento de arquivos externos não é suportado</string><string name="no_notes_found">Nenhuma nota encontrada</string><string name="note_deleted">Nota apagada</string><string name="note_exported_to">Nota exportada com sucesso</string><string name="note_saved">Nota salva</string><string name="notes_deleted">Notas apagadas</string><string name="notes_exported_to">Notas exportadas com sucesso</string><string name="note_imported_successfully">Nota importada com sucesso</string><string name="notes_imported_successfully">Notas importadas com sucesso</string><string name="pref_title_show_dialogs">Perguntar antes de salvar</string><string name="send_to">Compartilhar nota para…</string><string name="pref_title_show_date">Mostrar data/hora</string><string name="action_theme">Tema</string><string name="pref_title_direct_edit">Editar notas diretamente</string><string name="pref_title_markdown">Suporte Markdown/HTML</string><string name="action_print">Imprimir</string><string name="action_start_selection">Selecionar notas</string><string name="action_select_all">Selecionar tudo</string><string name="no_notes_to_select">Nenhuma nota para selecionar</string><string name="document">%1$s Documento</string><string name="no_notes_to_export">Nenhuma nota selecionada para exportar</string><string name="no_notes_to_delete">Nenhuma nota selecionada para apagar</string><string name="check_for_updates">Verificar se há atualizações</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Data (mais recente primeiro)</item>
+        <item>Data (mais antiga primeiro)</item>
+        <item>Nome (A a Z)</item>
+        <item>Nome (Z a A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Claro</item>
+        <item>Escuro</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sem serifa</item>
+        <item>Com serifa</item>
+        <item>Mono-espaçada</item>
+    </string-array><string-array name="font_size_list">
+        <item>Menor</item>
+        <item>Pequeno</item>
+        <item>Normal</item>
+        <item>Grande</item>
+        <item>Maior</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-ru\strings.xml" qualifiers="ru"><string name="action_cancel">Отмена</string><string name="action_close">Закрыть</string><string name="action_delete">Удалить</string><string name="action_discard">Отменить</string><string name="action_edit">Редактировать</string><string name="action_export">Экспортировать</string><string name="action_font_size">Размер шрифта</string><string name="action_new">Новая заметка</string><string name="action_print">Распечатать</string><string name="action_save">Сохранить</string><string name="action_select_all">Выбрать все</string><string name="action_settings">Настройки</string><string name="action_share">Поделиться</string><string name="action_sort_by">Сортировать заметки</string><string name="action_start_selection">Выбрать заметки</string><string name="action_theme">Тема</string><string name="app_name">Заметки</string><string name="app_name_debug">Заметки (Отладка)</string><string name="changes_discarded">Изменения отменены</string><string name="dialog_about_message">"Notepad: простое приложение для создания заметок
+
+© %d Braden Farmer
+App logo by Tobaloidee
+Russian translation by Vladimir Kosolapov"</string><string name="dialog_about_title">О приложении</string><string name="dialog_are_you_sure">Вы уверены?</string><string name="dialog_delete_button_title">Удалить заметку</string><string name="dialog_delete_button_title_plural">Удалить заметки</string><string name="dialog_save_button_title">Сохранить изменения</string><string name="dialog_save_changes">Хотите сохранить сделанные изменения?</string><string name="double_tap">Подсказка: дважды нажмите на текст для перехода в режим редактирования</string><string name="draft_restored">Черновик восстановлен</string><string name="draft_saved">Черновик сохранен</string><string name="edit_text">Введите текст</string><string name="empty_note">Пожалуйста, введите текст!</string><string name="first_run">"Добро пожаловать в Notepad!
+
+Для начала нажмите на кнопку создания новой заметки."</string><string name="first_view">Для изменения сохраненной заметки дважды нажмите на текст или воспользуйтесь кнопкой редактирования.</string><string name="import_notes">Импортировать заметки</string><string name="loading_external_file">Загрузка внешних файлов не поддерживается</string><string name="no_notes_found">Заметки не найдены</string><string name="no_notes_to_delete">Заметки для удаления не выбраны</string><string name="no_notes_to_export">Заметки для экспорта не выбраны</string><string name="no_notes_to_select">Нет заметок для выбора</string><string name="note_deleted">Заметка удалена</string><string name="note_exported_to">Заметка успешно экспортирована</string><string name="note_imported_successfully">Заметка успешно импортирована</string><string name="note_saved">Заметка сохранена</string><string name="notes_deleted">Заметки удалены</string><string name="notes_exported_to">Заметки успешно экспортированы</string><string name="notes_imported_successfully">Заметки успешно импортированы</string><string name="pref_title_direct_edit">Редактировать сразу</string><string name="pref_title_markdown">Поддержка языка разметки</string><string name="pref_title_show_date">Показывать дату и время</string><string name="pref_title_show_dialogs">Спрашивать перед сохранением</string><string name="send_to">Поделиться заметкой с…</string><string name="check_for_updates">Check for Updates</string><string name="action_export_filename">Exported filename</string><string name="cab_note_selected">%d note selected</string><string name="cab_notes_selected">%d notes selected</string><string name="document">%1$s Document</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Дата (сначала недавние)</item>
+        <item>Дата (oldest first)</item>
+        <item>Наименование (А – Я)</item>
+        <item>Наименование (Я – А)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Светлая</item>
+        <item>Темная</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Наименьший</item>
+        <item>Мелкий</item>
+        <item>Нормальный</item>
+        <item>Большой</item>
+        <item>Наибольший</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-sw\strings.xml" qualifiers="sw"><string name="action_cancel">Sitisha</string><string name="action_close">Funga</string><string name="action_delete">Futa</string><string name="action_discard">Ondoa</string><string name="action_edit">Hariri</string><string name="action_export">Hamisha</string><string name="action_font_size">Ukubwa wa Hati</string><string name="action_new">Kidokezo Kipya</string><string name="action_save">Hifadhi</string><string name="action_settings">Mabadilisho</string><string name="action_share">Sambaza</string><string name="action_sort_by">Panga Vidokezo Kwa</string><string name="action_export_filename">Anwani ya faili lililohamishwa</string><string name="app_name">Kichukua Matini</string><string name="app_name_debug">Kichukua Matini (Tatuzi)</string><string name="cab_note_selected">%d Kidokezo kilichochaguliwa</string><string name="cab_notes_selected">%d Vidokezo Vilivyochaguliwa</string><string name="changes_discarded">Mabadiliko Hayajahifadhiwa</string><string name="dialog_about_message">Kichukua Matini: programu nyepesi ya kuchukulia matini\n\n© %d Braden Farmer\nNembo ya programu iliundwa na Tobaloidee</string><string name="dialog_about_title">Kuhusu Kichukua Matini</string><string name="dialog_are_you_sure">Una Uhakika?</string><string name="dialog_delete_button_title">Futa kidokezo</string><string name="dialog_delete_button_title_plural">Futa Vidokezo</string><string name="dialog_save_button_title">Hifadhi Mabadiliko</string><string name="dialog_save_changes">Je, Unataka Kuhifadhi Mabadiliko?</string><string name="draft_restored">Rasimu imerejeshwa</string><string name="draft_saved">Rasimu imehifadhiwa</string><string name="double_tap">Nasaha: finya matini mara mbili ili uweze kuhariri</string><string name="edit_text">Tumia kiibodi kuongeza matini</string><string name="empty_note">Tafadhali ongeza matini!</string><string name="first_run">Karibu katika Kichukua Matini!\n\nKuunda kidokezo, bonyeza kibonyezo cha kidokezo kipya (ishara ya kuongeza).</string><string name="first_view">Kuhariri kidokezo kilichohifadhiwa, finya matini mara mbili au bonyeza kibonyezo cha Kuhariri (penseli).</string><string name="import_notes">Ingiza vidokezo</string><string name="loading_external_file">Kuingiza mafaili ya nje hakuwezekani</string><string name="no_notes_found">Vidokezo havijapatikana</string><string name="note_deleted">Kidokezo kimefutwa</string><string name="note_exported_to">kidokezo kimehamishwa kwa mafanikio</string><string name="note_saved">Kidokezo kimehifadhiwa</string><string name="notes_deleted">Vidokezo vimefutwa</string><string name="notes_exported_to">Vidokezo vimehamishwa kwa mafanikio</string><string name="note_imported_successfully">Kidokezo kimehifashiwa kwa mafanikio</string><string name="notes_imported_successfully">Vidokezo vimeingizwa kwa mafanikio</string><string name="pref_title_show_dialogs">Uliza kabla ya kuhifadhi</string><string name="send_to">Sambaza kidokezo kwa…</string><string name="pref_title_show_date">Onyesha tarehe/wakati</string><string name="action_theme">Mfumo wa rangi</string><string name="pref_title_direct_edit">Hariri vidokezo moja kwa moja</string><string name="pref_title_markdown">Uwezekano wa kutumia mfumo wa kudokeza wa "Markdown" au "HTML"</string><string name="action_print">Chapisha</string><string name="action_start_selection">Chagua Vidokezo</string><string name="action_select_all">Chagua vyote</string><string name="no_notes_to_select">Hakuna vidokezo vya kuchagua</string><string name="document">%1$s Hati</string><string name="no_notes_to_export">Hakuna vidokezo vilivyochaguliwa vya kuhamisha</string><string name="no_notes_to_delete">Hakuna vidokezo vilivyochaguliwa vya kufuta</string><string name="check_for_updates">Angalia kama kuna Toleo Jipya</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Date (vipya kwanza)</item>
+        <item>Date (vizee kwanza)</item>
+        <item>Name (A hadi Z)</item>
+        <item>Name (Z hadi A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Jepesi</item>
+        <item>Nyeusi</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Ndogo zaidi</item>
+        <item>Ndogo</item>
+        <item>Kawaida</item>
+        <item>Kubwa</item>
+        <item>Kubwa zaidi</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>Mshororo wa kwanza wa matini</item>
+        <item>Mshororo wa kwanza + wakati</item>
+        <item>Wakati + mshororo wa kwanza</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-tr\strings.xml" qualifiers="tr"><string name="action_cancel">İptal</string><string name="action_close">Kapat</string><string name="action_delete">Sil</string><string name="action_discard">Gözardı</string><string name="action_edit">Düzenle</string><string name="action_export">Dışa aktar</string><string name="action_export_filename">Dışa aktarılan dosya adı</string><string name="action_font_size">Yazı boyutu</string><string name="action_new">Yeni Not</string><string name="action_print">Yazdır</string><string name="action_save">Kaydet</string><string name="action_select_all">Hepsini seç</string><string name="action_settings">Ayarlar</string><string name="action_share">Paylaş</string><string name="action_sort_by">Sıralama ölçütü</string><string name="action_start_selection">Notları seç</string><string name="action_theme">Tema</string><string name="app_name">Not Defteri</string><string name="app_name_debug">Not Defteri (Hata Ayıklama)</string><string name="cab_note_selected">%d Not seçildi</string><string name="cab_notes_selected">%d Notlar seçildi</string><string name="changes_discarded">Değişiklikler silindi</string><string name="check_for_updates">Güncellemeleri kontrol et</string><string name="dialog_about_message">"Not Defteri, basit bir not alma uygulamasıdır.
+
+© %d Braden Farmer
+App logo by Tobaloidee"</string><string name="dialog_about_title">Hakkında</string><string name="dialog_are_you_sure">Silmek istediğinizden emin misiniz?</string><string name="dialog_delete_button_title">Notu sil</string><string name="dialog_delete_button_title_plural">Notları sil</string><string name="dialog_save_button_title">Değişiklikleri kaydet</string><string name="dialog_save_changes">Değişikliklerinizi kaydetmek istiyor musunuz?</string><string name="document">%1$s Belge</string><string name="double_tap">İpucu: Düzenleme moduna geçmek için metne iki kez dokunun</string><string name="draft_restored">Taslak geri yüklendi</string><string name="draft_saved">Taslak kaydedildi</string><string name="edit_text">Metin eklemek için yazın</string><string name="empty_note">Lütfen bir metin girin!</string><string name="first_run">"Not Defterine Hoş Geldiniz!
+
+Bir not oluşturmak için Yeni Not düğmesine (artı işareti) tıklayın."</string><string name="first_view">Kaydedilmiş bir notu düzenlemek için metne çift dokunun veya Düzenle düğmesini (kalem) tıklayın</string><string name="import_notes">İçe aktar</string><string name="loading_external_file">Harici dosyaların yüklenmesi desteklenmiyor</string><string name="no_notes_found">Not bulunamadı</string><string name="no_notes_to_delete">Silinmek için not seçilmedi!</string><string name="no_notes_to_export">Dışa aktarmak için not seçilmedi</string><string name="no_notes_to_select">Seçilecek not yok!</string><string name="note_deleted">Not silindi</string><string name="note_exported_to">Not başarıyla dışa aktarıldı</string><string name="note_imported_successfully">Not başarıyla içe aktarıldı</string><string name="note_saved">Not kaydedildi</string><string name="notes_deleted">Notlar silindi</string><string name="notes_exported_to">Notlar başarıyla dışa aktarıldı</string><string name="notes_imported_successfully">Notlar başarıyla içe aktarıldı</string><string name="pref_title_direct_edit">Notları doğrudan düzenleyin</string><string name="pref_title_markdown">Markdown/HTML desteği</string><string name="pref_title_show_date">Tarih / Saat göster</string><string name="pref_title_show_dialogs">Kaydetmeden önce sor</string><string name="send_to">Notu paylaş…</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>Date (newest first)</item>
+        <item>Date (oldest first)</item>
+        <item>Name (A to Z)</item>
+        <item>Name (Z to A)</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array><string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array><string-array name="font_size_list">
+        <item>Smallest</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Largest</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-v27\styles_notepad.xml" qualifiers="v27"><style name="Theme.Notepad" parent="Theme.Notepad.Base">
+        <item name="android:navigationBarColor">@color/navbar_color_light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-zh-rCN\strings.xml" qualifiers="zh-rCN"><string name="action_cancel">取消</string><string name="action_close">关闭</string><string name="action_delete">删除</string><string name="action_discard">舍弃</string><string name="action_edit">编辑</string><string name="action_export">导出</string><string name="action_font_size">字体大小</string><string name="action_new">新建笔记</string><string name="action_save">保存</string><string name="action_settings">设置</string><string name="action_share">分享</string><string name="action_sort_by">排序方式</string><string name="action_export_filename">导出文件名</string><string name="app_name">Notepad</string><string name="app_name_debug">@string/app_name</string><string name="cab_note_selected">%d 项目已选</string><string name="cab_notes_selected">%d 项目已选</string><string name="changes_discarded">已舍弃更改</string><string name="dialog_about_message">Notepad: a simple note-taking app\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">关于 Notepad</string><string name="dialog_are_you_sure">确认？</string><string name="dialog_delete_button_title">删除笔记</string><string name="dialog_delete_button_title_plural">删除笔记</string><string name="dialog_save_button_title">保存更改</string><string name="dialog_save_changes">是否保存更改？</string><string name="draft_restored">已恢复草稿</string><string name="draft_saved">已保存草稿</string><string name="double_tap">提示：双击文本以进入编辑模式</string><string name="edit_text">请键入文字</string><string name="empty_note">文本为空！</string><string name="first_run">欢迎使用 Notepad！\n\n点击加号以创建新笔记。</string><string name="first_view">要开始编辑，请双击文本或点击小铅笔。</string><string name="import_notes">导入笔记</string><string name="loading_external_file">加载外部内容失败 (或内容类型不受支持)</string><string name="no_notes_found">无笔记</string><string name="note_deleted">已删除笔记</string><string name="note_exported_to">导出笔记成功</string><string name="note_saved">已保存笔记</string><string name="notes_deleted">已删除笔记</string><string name="notes_exported_to">导出笔记成功</string><string name="note_imported_successfully">导入笔记成功</string><string name="notes_imported_successfully">导入笔记成功</string><string name="pref_title_show_dialogs">保存笔记前请求确认</string><string name="send_to">笔记分享方式</string><string name="pref_title_show_date">列表中显示修改时间</string><string name="action_theme">主题</string><string name="pref_title_direct_edit">打开笔记即开始编辑</string><string name="pref_title_markdown">Markdown/HTML 支持</string><string name="action_print">打印</string><string name="action_start_selection">批量选择笔记</string><string name="action_select_all">全选</string><string name="no_notes_to_select">无笔记可选</string><string name="document">%1$s 个文档 </string><string name="no_notes_to_export">导出：未选择任何笔记</string><string name="no_notes_to_delete">删除：未选择任何笔记</string><string name="check_for_updates">检查更新</string><string name="rtl_layout"> 从右至左 (RTL) 文本布局 </string><string name="pref_title_font_type">字体类型</string><string-array name="sort_by_list">
+        <item>由新至旧</item>
+        <item>由旧至新</item>
+        <item>标题顺序</item>
+        <item>标题逆序</item>
+    </string-array><string-array name="theme_list">
+        <item>跟随系统</item>
+        <item>浅色</item>
+        <item>深色</item>
+    </string-array><string-array name="font_type_list">
+        <item>无衬线体</item>
+        <item>衬线体</item>
+        <item>等宽字体</item>
+    </string-array><string-array name="font_size_list">
+        <item>极小</item>
+        <item>小</item>
+        <item>正常</item>
+        <item>大</item>
+        <item>极大</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>文本的第一行</item>
+        <item>第一行文字 + 时间戳</item>
+        <item>时间戳 + 第一行文字</item>
+    </string-array></file><file path="D:\WORK\kotlin\Notepad\app\src\main\res\values-zh-rTW\strings.xml" qualifiers="zh-rTW"><string name="action_cancel">取消</string><string name="action_close">關閉</string><string name="action_delete">移除</string><string name="action_discard">放棄</string><string name="action_edit">編輯</string><string name="action_export">匯出</string><string name="action_font_size">字型大小</string><string name="action_new">新建筆記</string><string name="action_save">存儲</string><string name="action_settings">設定</string><string name="action_share">分享</string><string name="action_sort_by">排序方式</string><string name="action_export_filename">匯出檔案名</string><string name="app_name">Notepad</string><string name="app_name_debug">@string/app_name</string><string name="cab_note_selected">%d 已選筆記</string><string name="cab_notes_selected">%d 已選筆記</string><string name="changes_discarded">已放棄更改</string><string name="dialog_about_message">Notepad: a simple note-taking app\n\n© %d Braden Farmer\nApp logo by Tobaloidee</string><string name="dialog_about_title">關於 Notepad</string><string name="dialog_are_you_sure">確定？</string><string name="dialog_delete_button_title">移除筆記</string><string name="dialog_delete_button_title_plural">移除筆記</string><string name="dialog_save_button_title">存儲更改</string><string name="dialog_save_changes">是否存儲更改？</string><string name="draft_restored">已恢復草稿</string><string name="draft_saved">已存儲草稿</string><string name="double_tap">提示：連按兩次文字以進入編輯模式</string><string name="edit_text">請輸入文字</string><string name="empty_note">筆記是空的！</string><string name="first_run">歡迎使用 Notepad！\n\n點擊加號以建立新筆記。</string><string name="first_view">要開始編輯，請按兩下文字或點擊小鉛筆。</string><string name="import_notes">匯入筆記</string><string name="loading_external_file">不支援匯入外部檔案</string><string name="no_notes_found">無筆記</string><string name="note_deleted">已移除筆記</string><string name="note_exported_to">匯出筆記成功</string><string name="note_saved">筆記已存儲</string><string name="notes_deleted">筆記已移除</string><string name="notes_exported_to">匯出筆記成功</string><string name="note_imported_successfully">匯入筆記成功</string><string name="notes_imported_successfully">匯入筆記成功</string><string name="pref_title_show_dialogs">請確定是否存儲筆記</string><string name="send_to">筆記分享方式</string><string name="pref_title_show_date">在清單中顯示修改時間</string><string name="action_theme">主題</string><string name="pref_title_direct_edit">打開筆記即可編輯</string><string name="pref_title_markdown">Markdown/HTML 支援</string><string name="action_print">列印</string><string name="action_start_selection">批次選取筆記</string><string name="action_select_all">全選</string><string name="no_notes_to_select">無筆記可選</string><string name="document">%1$s 個文件</string><string name="no_notes_to_export">匯出：未選取任何筆記</string><string name="no_notes_to_delete">移除：未選取任何筆記</string><string name="check_for_updates">檢查更新</string><string name="rtl_layout">Right-to-left layout</string><string name="pref_title_font_type">Font type</string><string-array name="sort_by_list">
+        <item>由新至舊</item>
+        <item>由舊至新</item>
+        <item>名字（A 到 Z）</item>
+        <item>名字（Z 到 A）</item>
+    </string-array><string-array name="theme_list">
+        <item>System</item>
+        <item>淺色</item>
+        <item>深色</item>
+    </string-array><string-array name="font_type_list">
+        <item>無襯線體</item>
+        <item>襯線體</item>
+        <item>等寬</item>
+    </string-array><string-array name="font_size_list">
+        <item>極小</item>
+        <item>小</item>
+        <item>正常</item>
+        <item>大</item>
+        <item>極大</item>
+    </string-array><string-array name="exported_filename_list">
+        <item>文字的第一行</item>
+        <item>第一行文字 + 時間戳</item>
+        <item>時間戳 + 第一行文字</item>
+    </string-array></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WORK\kotlin\Notepad\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WORK\kotlin\Notepad\app\src\debug\res"><file name="shortcuts" path="D:\WORK\kotlin\Notepad\app\src\debug\res\xml\shortcuts.xml" qualifiers="" type="xml"/></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WORK\kotlin\Notepad\app\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WORK\kotlin\Notepad\app\build\generated\res\resValues\debug"/></dataSet><mergedItems/></merger>

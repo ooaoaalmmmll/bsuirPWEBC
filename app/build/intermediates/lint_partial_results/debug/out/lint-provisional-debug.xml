@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.2" type="conditional_incidents">
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/drawable/ic_mode_edit_black_24dp.xml"
+            line="7"
+            column="28"
+            startOffset="245"
+            endLine="7"
+            endColumn="42"
+            endOffset="259"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffffff00000" requiresApi="ffffffffff000000"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*1}/xml/shortcuts.xml"
+            line="19"
+            column="9"
+            startOffset="760"
+            endLine="19"
+            endColumn="38"
+            endOffset="789"/>
+        <map>
+            <api-levels id="minSdk"
+                value="fffffffffff00000"/>
+            <api-levels id="requiresApi"
+                value="ffffffffff000000"/>
+            <entry
+                name="message"
+                string="Attribute `shortcutId` is only used in API level 25 and higher (current min is %1$s)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffffff00000" requiresApi="ffffffffff000000"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*1}/xml/shortcuts.xml"
+            line="22"
+            column="9"
+            startOffset="879"
+            endLine="22"
+            endColumn="56"
+            endOffset="926"/>
+        <map>
+            <api-levels id="minSdk"
+                value="fffffffffff00000"/>
+            <api-levels id="requiresApi"
+                value="ffffffffff000000"/>
+            <entry
+                name="message"
+                string="Attribute `shortcutShortLabel` is only used in API level 25 and higher (current min is %1$s)"/>
+        </map>
+    </incident>
+
+</incidents>

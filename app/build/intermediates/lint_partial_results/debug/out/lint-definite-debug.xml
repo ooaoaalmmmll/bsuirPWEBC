@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.2" type="incidents">
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="273"/>
+    </incident>
+
+    <incident
+        id="PluralsCandidate"
+        severity="warning"
+        message="Formatting %d followed by words (&quot;note&quot;): This should probably be a plural rather than a string">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="36"
+            column="5"
+            startOffset="1479"
+            endLine="36"
+            endColumn="63"
+            endOffset="1537"/>
+    </incident>
+
+    <incident
+        id="PluralsCandidate"
+        severity="warning"
+        message="Formatting %d followed by words (&quot;notes&quot;): This should probably be a plural rather than a string">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="37"
+            column="5"
+            startOffset="1543"
+            endLine="37"
+            endColumn="65"
+            endOffset="1603"/>
+    </incident>
+
+    <incident
+        id="PluralsCandidate"
+        severity="warning"
+        message="Formatting %d followed by words (&quot;Braden&quot;): This should probably be a plural rather than a string">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="39"
+            column="5"
+            startOffset="1674"
+            endLine="39"
+            endColumn="134"
+            endOffset="1803"/>
+    </incident>
+
+    <incident
+        id="Typos"
+        severity="warning"
+        message="&quot;A a&quot; is a common misspelling; did you mean &quot;A&quot;?">
+        <fix-alternatives>
+            <fix-replace
+                description="Replace with &quot;A&quot;"
+                oldString="A a"
+                replacement="A"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/values-pt-rBR/strings.xml"
+            line="83"
+            column="21"
+            startOffset="4893"
+            endLine="83"
+            endColumn="21"
+            endOffset="4896"/>
+    </incident>
+
+    <incident
+        id="RestrictedApi"
+        severity="error"
+        message="ComponentActivity.dispatchKeyShortcutEvent can only be called from within the same library group prefix (referenced groupId=`androidx.core` with prefix androidx from groupId=`Notepad`)">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/android/NotepadActivity.kt"
+            line="78"
+            column="18"
+            startOffset="2521"
+            endLine="78"
+            endColumn="42"
+            endOffset="2545"/>
+    </incident>
+
+    <incident
+        id="RestrictedApi"
+        severity="error"
+        message="ComponentActivity.dispatchKeyShortcutEvent can only be called from within the same library group prefix (referenced groupId=`androidx.core` with prefix androidx from groupId=`Notepad`)">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/android/NotepadActivity.kt"
+            line="82"
+            column="19"
+            startOffset="2745"
+            endLine="82"
+            endColumn="43"
+            endOffset="2769"/>
+    </incident>
+
+    <incident
+        id="ComposableNaming"
+        severity="warning"
+        message="Composable functions with a return type should start with a lowercase letter">
+        <fix-replace
+            description="Change to rememberNoteListScrollState"
+            robot="true"
+            independent="true"
+            oldString="RememberNoteListScrollState"
+            replacement="rememberNoteListScrollState"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/ui/content/NoteListContent.kt"
+            line="66"
+            column="5"
+            startOffset="2487"
+            endLine="66"
+            endColumn="32"
+            endOffset="2514"/>
+    </incident>
+
+    <incident
+        id="UnusedMaterialScaffoldPaddingParameter"
+        severity="error"
+        message="Content padding parameter it is not used">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/ui/previews/EditNotePreview.kt"
+            line="51"
+            column="19"
+            startOffset="1895"
+            endLine="53"
+            endColumn="10"
+            endOffset="1945"/>
+    </incident>
+
+    <incident
+        id="UnusedMaterialScaffoldPaddingParameter"
+        severity="error"
+        message="Content padding parameter it is not used">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/ui/previews/NoteListPreview.kt"
+            line="44"
+            column="19"
+            startOffset="1606"
+            endLine="46"
+            endColumn="10"
+            endOffset="1652"/>
+    </incident>
+
+    <incident
+        id="UnusedMaterialScaffoldPaddingParameter"
+        severity="error"
+        message="Content padding parameter it is not used">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/ui/previews/ViewNotePreview.kt"
+            line="51"
+            column="19"
+            startOffset="1895"
+            endLine="51"
+            endColumn="49"
+            endOffset="1925"/>
+    </incident>
+
+    <incident
+        id="UnusedMaterialScaffoldPaddingParameter"
+        severity="error"
+        message="Content padding parameter it is not used">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/ui/routes/NotepadComposeApp.kt"
+            line="622"
+            column="19"
+            startOffset="21578"
+            endLine="643"
+            endColumn="10"
+            endOffset="22189"/>
+    </incident>
+
+    <incident
+        id="UnusedMaterialScaffoldPaddingParameter"
+        severity="error"
+        message="Content padding parameter it is not used">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/ui/routes/StandaloneEditor.kt"
+            line="153"
+            column="19"
+            startOffset="4986"
+            endLine="160"
+            endColumn="10"
+            endOffset="5209"/>
+    </incident>
+
+    <incident
+        id="Recycle"
+        severity="warning"
+        message="This `InputStream` should be freed up after use with `#close()`">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/farmerbb/notepad/viewmodel/NotepadViewModel.kt"
+            line="360"
+            column="49"
+            startOffset="10731"
+            endLine="360"
+            endColumn="64"
+            endOffset="10746"/>
+    </incident>
+
+</incidents>

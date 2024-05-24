@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="exported_filename_list">
+        <item>Πρώτη σειρά του κειμένου</item>
+        <item>Πρώτη σειρά + χρονοσήμανση</item>
+        <item>Χρονοσήμανση + πρώτη σειρά</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>Μικρότερα</item>
+        <item>Μικρά</item>
+        <item>Φυσιολογικά</item>
+        <item>Μεγάλα</item>
+        <item>Μεγαλύτερα</item>
+    </string-array>
+    <string-array name="font_type_list">
+        <item>Sans serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+    <string-array name="sort_by_list">
+        <item>Ημερομηνία (νεότερη πρώτα)</item>
+        <item>Ημερομηνία (παλαιότερη πρώτα)</item>
+        <item>Όνομα (Α-Ω)</item>
+        <item>Όνομα (Ω-Α)</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>System</item>
+        <item>Ανοιχτό</item>
+        <item>Σκούρο</item>
+    </string-array>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Πλοήγηση στην αρχική σελίδα"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Πλοήγηση προς τα επάνω"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Περισσότερες επιλογές"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Τέλος"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Εμφάνιση όλων"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Επιλέξτε μια εφαρμογή"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ΕΝΕΡΓΟΠΟΙΗΣΗ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"διάστημα"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Αναζήτηση…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Διαγραφή ερωτήματος"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Ερώτημα αναζήτησης"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Αναζήτηση"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Υποβολή ερωτήματος"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Φωνητική αναζήτηση"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Κοινοποίηση σε"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Κοινοποίηση στην εφαρμογή <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Σύμπτυξη"</string>
+    <string name="action_cancel">Άκυρο</string>
+    <string name="action_close">Κλείσιμο</string>
+    <string name="action_delete">Διαγραφή</string>
+    <string name="action_discard">Απόρριψη</string>
+    <string name="action_edit">Διόρθωση</string>
+    <string name="action_export">Εξαγωγή</string>
+    <string name="action_export_filename">Όνομα εξαγμένου αρχείου</string>
+    <string name="action_font_size">Μέγεθος font</string>
+    <string name="action_new">Νέα σημείωση</string>
+    <string name="action_print">Εκτύπωση</string>
+    <string name="action_save">Αποθήκευση</string>
+    <string name="action_select_all">Επιλογή όλων</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="action_share">Μοίρασμα</string>
+    <string name="action_sort_by">Ταξινόμιση ανά</string>
+    <string name="action_start_selection">Επιλογή σημειώσεων</string>
+    <string name="action_theme">Θέμα</string>
+    <string name="app_name">Σημειώσεις</string>
+    <string name="app_name_debug">Notepad (Debug)</string>
+    <string name="cab_note_selected">%d σημείωση επιλέχθηκε</string>
+    <string name="cab_notes_selected">%d σημειώσεις επιλέχθηκαν</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Απάντηση"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Βίντεο"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Απόρριψη"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Τερματισμός"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Εισερχόμενη κλήση"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Κλήση σε εξέλιξη"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Διαλογή εισερχόμενης κλήσης"</string>
+    <string name="changes_discarded">Οι αλλαγές απορρίφθηκαν</string>
+    <string name="check_for_updates">Έλεγχος για ενημερώσεις</string>
+    <string msgid="406453423630273620" name="close_drawer">"Κλείσιμο του μενού πλοήγησης"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Κλείσιμο φύλλου"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Ενεργοποίηση</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Η εφαρμογή %1$s δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις υπηρεσίες Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Ενεργοποίηση υπηρεσιών Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Εγκατάσταση</string>
+    <string name="common_google_play_services_install_text">Η εφαρμογή %1$s δεν μπορεί να εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από τη συσκευή σας.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Λήψη υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Διαθεσιμότητα υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Σφάλμα Υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Η εφαρμογή %1$s αντιμετωπίζει κάποιο πρόβλημα με τις υπηρεσίες Google Play. Προσπαθήστε ξανά.</string>
+    <string name="common_google_play_services_unsupported_text">Η εφαρμογή %1$s δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες δεν υποστηρίζονται από τη συσκευή σας.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Ενημέρωση</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Η εφαρμογή %1$s θα εκτελεστεί αφού ενημερώσετε τις Υπηρεσίες Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Ενημέρωση υπηρεσιών Google Play</string>
+    <string name="common_google_play_services_updating_text">Η εφαρμογή %1$s δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες ενημερώνονται αυτήν τη στιγμή.</string>
+    <string name="common_google_play_services_wear_update_text">Απαιτείται νέα έκδοση των υπηρεσιών Google Play. Θα ενημερωθεί σύντομα.</string>
+    <string name="common_open_on_phone">Άνοιγμα σε τηλέφωνο</string>
+    <string name="common_signin_button_text">Σύνδεση</string>
+    <string name="common_signin_button_text_long">Συνδεθείτε με το Google</string>
+    <string msgid="6083905920877235314" name="copy">"Αντιγραφή"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Μη έγκυρη καταχώριση"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Αναδυόμενο παράθυρο"</string>
+    <string name="dialog_about_message">Σημειώσεις: μια απλή εφαρμογή σημειώσεων\n\n© %d Braden Farmer\nΛογότυπο εφαρμογής από Tobaloidee</string>
+    <string name="dialog_about_title">Σχετικά με το Σημειώσεις</string>
+    <string name="dialog_are_you_sure">Σίγουρα;?</string>
+    <string name="dialog_delete_button_title">Διαγραφή σημείωσης</string>
+    <string name="dialog_delete_button_title_plural">Διαγραφή σημειώσεων</string>
+    <string name="dialog_save_button_title">Αποθήκευση αλλαγών</string>
+    <string name="dialog_save_changes">Θέλετε να αποθηκεύσετε τις αλλαγές;</string>
+    <string name="document">%1$s έγγραφο</string>
+    <string name="double_tap">Συμβουλή: εναλλαγή σε κατάσταση επεξεργασίας με διπλό πάτημα στο κείμενο</string>
+    <string name="draft_restored">Ανακτήθηκε το πρόχειρο</string>
+    <string name="draft_saved">Αποθηκεύτηκε το πρόχειρο</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Αναπτυσσόμενο μενού"</string>
+    <string name="edit_text">Πληκτρολογήστε για προσθήκη κειμένου</string>
+    <string name="empty_note">Παρακαλώ βάλτε κάποιο κείμενο!</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Σύνθετες"</string>
+    <string name="first_run">Καλώς ήλθατε στο Σημειώσεις!\n\nΓια δημιουργία σημείωσης, κάντε κλικ στο κουμπί νέας σημείωσης (σύμβολο συν).</string>
+    <string name="first_view">Για επεξεργασία μιας αποθηκευμένης σημείωσης, κάντε διπλό κλικ στο κείμενο ή κάντε κλικ στο κουμπί επεξεργασίας (μολύβι).</string>
+    <string name="import_notes">Εισαγωγή σημειώσεων</string>
+    <string msgid="6827826412747255547" name="in_progress">"Σε εξέλιξη"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Έγινε μερικός έλεγχος"</string>
+    <string name="loading_external_file">Η φόρτωση εξωτερικών αρχείων δεν υποστηρίζεται</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Μενού πλοήγησης"</string>
+    <string name="no_notes_found">Δεν βρέθηκαν σημειώσεις</string>
+    <string name="no_notes_to_delete">Δεν επιλέχθηκαν σημειώσεις για διαγραφή</string>
+    <string name="no_notes_to_export">Δεν επιλέχθηκαν σημειώσεις για εξαγωγή</string>
+    <string name="no_notes_to_select">Δεν υπάρχουν σημειώσεις για επιλογή</string>
+    <string msgid="6610465462668679431" name="not_selected">"Δεν έχει επιλεχθεί"</string>
+    <string msgid="6573031135582639649" name="not_set">"Δεν έχει οριστεί"</string>
+    <string name="note_deleted">Η σημείωση διαγράφηκε</string>
+    <string name="note_exported_to">Η σημείωση εξήχθηκε επιτυχώς</string>
+    <string name="note_imported_successfully">Η σημείωση εισήχθηκε με επιτυχία</string>
+    <string name="note_saved">Η σημείωση αποθηκεύτηκε</string>
+    <string name="notes_deleted">Οι σημειώσεις διαγράφηκαν</string>
+    <string name="notes_exported_to">Οι σημειώσεις εξήχθηκαν με επιτυχία</string>
+    <string name="notes_imported_successfully">Οι σημειώσεις εισήχθηκαν με επιτυχία</string>
+    <string msgid="875452955155264703" name="off">"Ανενεργό"</string>
+    <string msgid="8655164131929253426" name="on">"Ενεργό"</string>
+    <string name="pref_title_direct_edit">Άμεση επεξεργασία σημειώσεων</string>
+    <string name="pref_title_font_type">Font type</string>
+    <string name="pref_title_markdown">Υποστήριξη Markdown/HTML</string>
+    <string name="pref_title_show_date">Εμφάνιση ημερομηνίας/ώρας</string>
+    <string name="pref_title_show_dialogs">Ερώτηση πριν την αποθήκευση</string>
+    <string msgid="6685851473431805375" name="preference_copied">"Το \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" αντιγράφηκε στο πρόχειρο."</string>
+    <string msgid="5941395253238309765" name="range_end">"Τέλος εύρους"</string>
+    <string msgid="7097486360902471446" name="range_start">"Αρχή εύρους"</string>
+    <string name="rtl_layout">Right-to-left layout</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Αναζήτηση"</string>
+    <string msgid="6043586758067023" name="selected">"Επιλεγμένο"</string>
+    <string name="send_to">Μοίρασμα σημείωσης σε…</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string msgid="2561197295334830845" name="switch_role">"Εναλλαγή"</string>
+    <string msgid="1672349317127674378" name="tab">"Καρτέλα"</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> τοις εκατό."</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"ΑΝΕΝΕΡΓΗ"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"ΕΝΕΡΓΗ"</string>
+</resources>

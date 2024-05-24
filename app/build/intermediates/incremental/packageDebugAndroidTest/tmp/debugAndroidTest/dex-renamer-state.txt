@@ -1,0 +1,7 @@
+#Mon May 06 11:58:53 MSK 2024
+base.0=D\:\\WORK\\kotlin\\Notepad\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.1=D\:\\WORK\\kotlin\\Notepad\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\9\\classes.dex
+path.0=0/classes.dex
+path.1=9/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

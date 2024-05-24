@@ -1,0 +1,17 @@
+<lint-module
+    format="1"
+    dir="D:\WORK\kotlin\Notepad\app"
+    name=":app"
+    type="APP"
+    maven="Notepad:app:"
+    agpVersion="8.0.2"
+    buildFolder="build"
+    bootClassPath="d:\ProgramData\AndroidSDKdir\platforms\android-33\android.jar;d:\ProgramData\AndroidSDKdir\build-tools\30.0.3\core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-33">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable_ic_mode_edit_black_24dp.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable/ic_mode_edit_black_24dp.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable_notepad_logo.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable/notepad_logo.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable_shortcut_icon.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable/shortcut_icon.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable_ic_launcher_adaptive_fg.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable/ic_launcher_adaptive_fg.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable_shortcut_icon_background.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable/shortcut_icon_background.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable-anydpi-v26_ic_mode_edit_black_24dp.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable-anydpi-v26/ic_mode_edit_black_24dp.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/drawable-anydpi-v26_shortcut_icon.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/drawable-anydpi-v26/shortcut_icon.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.farmerbb.notepad.app-main-70:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.farmerbb.notepad.app-merged_res-68:/xml_shortcuts.xml.flat",
+        "source": "com.farmerbb.notepad.app-debug-69:/xml/shortcuts.xml"
+    }
+]

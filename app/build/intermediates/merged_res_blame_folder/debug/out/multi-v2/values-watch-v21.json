@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.farmerbb.notepad.app-mergeDebugResources-66:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\AKav\\.gradle\\caches\\transforms-3\\2d0a1980142a2cce37c7d800d71b9cac\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+com.farmerbb.notepad.test.app-androidTest-0 D:\WORK\kotlin\Notepad\app\build\generated\res\resValues\androidTest\debug
+com.farmerbb.notepad.test.app-mergeDebugAndroidTestResources-1 D:\WORK\kotlin\Notepad\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.farmerbb.notepad.test.app-mergeDebugAndroidTestResources-2 D:\WORK\kotlin\Notepad\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.farmerbb.notepad.test.app-merged_res-3 D:\WORK\kotlin\Notepad\app\build\intermediates\merged_res\debugAndroidTest

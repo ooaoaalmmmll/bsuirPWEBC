@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="exported_filename_list">
+        <item>First line of text</item>
+        <item>First line + timestamp</item>
+        <item>Timestamp + first line</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>Kleinst</item>
+        <item>Klein</item>
+        <item>Normaal</item>
+        <item>Groot</item>
+        <item>Grootst</item>
+    </string-array>
+    <string-array name="font_type_list">
+        <item>Schreefloos</item>
+        <item>Met schreef</item>
+        <item>Vaste breedte</item>
+    </string-array>
+    <string-array name="sort_by_list">
+        <item>Datum (recentst eerst)</item>
+        <item>Datum (oldest first)</item>
+        <item>Naam (A-Z)</item>
+        <item>Naam (Z-A)</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>System</item>
+        <item>Licht</item>
+        <item>Donker</item>
+    </string-array>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navigeren naar startpositie"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Omhoog navigeren"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Meer opties"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Klaar"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Alles tonen"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Een app selecteren"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"UIT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AAN"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Functie +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spatie"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Zoeken…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Zoekopdracht wissen"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Zoekopdracht"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Zoeken"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Zoekopdracht verzenden"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Delen met"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Delen met <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Samenvouwen"</string>
+    <string name="action_cancel">Annuleren</string>
+    <string name="action_close">Sluiten</string>
+    <string name="action_delete">Verwijderen</string>
+    <string name="action_discard">Verwerpen</string>
+    <string name="action_edit">Bewerken</string>
+    <string name="action_export">Exporteren</string>
+    <string name="action_export_filename">Exported filename</string>
+    <string name="action_font_size">Lettertypegrootte</string>
+    <string name="action_new">Nieuwe notitie</string>
+    <string name="action_print">Afdrukken</string>
+    <string name="action_save">Opslaan</string>
+    <string name="action_select_all">Alles selecteren</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="action_share">Delen</string>
+    <string name="action_sort_by">Sorteren op</string>
+    <string name="action_start_selection">Notities selecteren</string>
+    <string name="action_theme">Thema</string>
+    <string name="app_name">Notitieblok</string>
+    <string name="app_name_debug">Notitieblok (foutopsporing)</string>
+    <string name="cab_note_selected">%d notitie geselecteerd</string>
+    <string name="cab_notes_selected">%d notities geselecteerd</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Beantwoorden"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Weigeren"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Ophangen"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Inkomend gesprek"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Actief gesprek"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Een inkomend gesprek screenen"</string>
+    <string name="changes_discarded">Wijzigingen verworpen</string>
+    <string name="check_for_updates">Check for Updates</string>
+    <string msgid="406453423630273620" name="close_drawer">"Navigatiemenu sluiten"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Blad sluiten"</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aanzetten</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services aanzet.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play-services aanzetten</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installeren</string>
+    <string name="common_google_play_services_install_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play-services ophalen</string>
+    <string name="common_google_play_services_notification_channel_name">Beschikbaarheid van Google Play-services</string>
+    <string name="common_google_play_services_notification_ticker">Fout met Google Play-services</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervindt problemen met Google Play-services. Probeer het opnieuw.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die niet worden ondersteund op je apparaat.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Updaten</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s kan niet worden uitgevoerd, tenzij je Google Play-services updatet.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play-services updaten</string>
+    <string name="common_google_play_services_updating_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die momenteel worden geüpdatet.</string>
+    <string name="common_google_play_services_wear_update_text">Er is een nieuwe versie van Google Play-services vereist. De update wordt binnenkort automatisch uitgevoerd.</string>
+    <string name="common_open_on_phone">Openen op telefoon</string>
+    <string name="common_signin_button_text">Inloggen</string>
+    <string name="common_signin_button_text_long">Inloggen met Google</string>
+    <string msgid="6083905920877235314" name="copy">"Kopiëren"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Ongeldige invoer"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Pop-upvenster"</string>
+    <string name="dialog_about_message">Notitieblok: een eenvoudige notitie-app\n\n© %d Braden Farmer\nApp-logo door Tobaloidee</string>
+    <string name="dialog_about_title">Over Notitieblok</string>
+    <string name="dialog_are_you_sure">Weet je het zeker?</string>
+    <string name="dialog_delete_button_title">Notitie verwijderen</string>
+    <string name="dialog_delete_button_title_plural">Notities verwijderen</string>
+    <string name="dialog_save_button_title">Opslaan</string>
+    <string name="dialog_save_changes">Wil je de wijzigingen opslaan?</string>
+    <string name="document">%1$s document</string>
+    <string name="double_tap">Tip: dubbeltik op de tekst om de bewerkmodus te openen</string>
+    <string name="draft_restored">Concept hersteld</string>
+    <string name="draft_saved">Concept opgeslagen</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Dropdownmenu"</string>
+    <string name="edit_text">Typ om tekst in te voeren</string>
+    <string name="empty_note">Voer tekst in!</string>
+    <string msgid="2427401033573778270" name="expand_button_title">"Geavanceerd"</string>
+    <string name="first_run">Welkom bij Notitieblok!\n\nVoeg een notitie toe door op de knop Nieuwe Notite (plus-teken) te drukken.</string>
+    <string name="first_view">Dubbeltik op een tekst om deze te bewerken of druk op de bewerkknop (potlood).</string>
+    <string name="import_notes">Notities importeren</string>
+    <string msgid="6827826412747255547" name="in_progress">"Bezig"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Gedeeltelijk aangevinkt"</string>
+    <string name="loading_external_file">Laden van externe bestanden niet toegestaan</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Navigatiemenu"</string>
+    <string name="no_notes_found">Geen notities aangetroffen</string>
+    <string name="no_notes_to_delete">Geen te verwijderen notities geselecteerd</string>
+    <string name="no_notes_to_export">Geen te exporteren notities geselecteerd</string>
+    <string name="no_notes_to_select">Geen te selecteren notities</string>
+    <string msgid="6610465462668679431" name="not_selected">"Niet geselecteerd"</string>
+    <string msgid="6573031135582639649" name="not_set">"Niet ingesteld"</string>
+    <string name="note_deleted">Notitie verwijderd</string>
+    <string name="note_exported_to">Notitie geëxporteerd</string>
+    <string name="note_imported_successfully">Notitie geïmporteerd</string>
+    <string name="note_saved">Notitie opgelagen</string>
+    <string name="notes_deleted">Notities verwijderd</string>
+    <string name="notes_exported_to">Notities geëxporteerd</string>
+    <string name="notes_imported_successfully">Notities geïmporteerd</string>
+    <string msgid="875452955155264703" name="off">"Uit"</string>
+    <string msgid="8655164131929253426" name="on">"Aan"</string>
+    <string name="pref_title_direct_edit">Notities direct bewerken</string>
+    <string name="pref_title_font_type">Font type</string>
+    <string name="pref_title_markdown">Markdown/HTML-ondersteuning</string>
+    <string name="pref_title_show_date">Datum/tijd tonen</string>
+    <string name="pref_title_show_dialogs">Vragen alvorens op te slaan</string>
+    <string msgid="6685851473431805375" name="preference_copied">"\'<ns1:g id="SUMMARY">%1$s</ns1:g>\' is gekopieerd naar het klembord."</string>
+    <string msgid="5941395253238309765" name="range_end">"Einde bereik"</string>
+    <string msgid="7097486360902471446" name="range_start">"Start bereik"</string>
+    <string name="rtl_layout">Right-to-left layout</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Zoeken"</string>
+    <string msgid="6043586758067023" name="selected">"Geselecteerd"</string>
+    <string name="send_to">Notitie delen met…</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="9167775378838880170" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string msgid="2561197295334830845" name="switch_role">"Overschakelen"</string>
+    <string msgid="1672349317127674378" name="tab">"Tabblad"</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> procent."</string>
+    <string msgid="3140233346420563315" name="v7_preference_off">"UIT"</string>
+    <string msgid="89551595707643515" name="v7_preference_on">"AAN"</string>
+</resources>

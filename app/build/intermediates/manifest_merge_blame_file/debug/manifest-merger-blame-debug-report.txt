@@ -1,0 +1,297 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3     Copyright 2014 Braden Farmer
+4
+5      Licensed under the Apache License, Version 2.0 (the "License");
+6      you may not use this file except in compliance with the License.
+7      You may obtain a copy of the License at
+8  
+9           http://www.apache.org/licenses/LICENSE-2.0
+10  
+11      Unless required by applicable law or agreed to in writing, software
+12      distributed under the License is distributed on an "AS IS" BASIS,
+13      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14      See the License for the specific language governing permissions and
+15      limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.farmerbb.notepad.debug"
+19    android:installLocation="auto"
+20    android:versionCode="119"
+21    android:versionName="3.0.4" >
+22
+23    <uses-sdk
+24        android:minSdkVersion="21"
+24-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml
+25        android:targetSdkVersion="31" />
+25-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml
+26
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:23:5-66
+27-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:23:22-64
+28
+29    <uses-feature
+29-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:24:5-26:36
+30        android:name="android.hardware.touchscreen"
+30-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:25:9-52
+31        android:required="false" />
+31-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:26:9-33
+32    <uses-feature
+32-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:28:5-30:36
+33        android:name="android.hardware.type.pc"
+33-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:29:9-48
+34        android:required="false" />
+34-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:30:9-33
+35
+36    <supports-screens
+36-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:32:5-37:40
+37        android:anyDensity="true"
+37-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:33:9-34
+38        android:largeScreens="true"
+38-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:34:9-36
+39        android:normalScreens="true"
+39-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:35:9-37
+40        android:smallScreens="true"
+40-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:36:9-36
+41        android:xlargeScreens="true" />
+41-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:37:9-37
+42
+43    <permission
+43-->[androidx.core:core:1.10.1] C:\Users\AKav\.gradle\caches\transforms-3\68de7715609978c7dd1f9264075cc93d\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+44        android:name="com.farmerbb.notepad.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.10.1] C:\Users\AKav\.gradle\caches\transforms-3\68de7715609978c7dd1f9264075cc93d\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.10.1] C:\Users\AKav\.gradle\caches\transforms-3\68de7715609978c7dd1f9264075cc93d\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.farmerbb.notepad.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.10.1] C:\Users\AKav\.gradle\caches\transforms-3\68de7715609978c7dd1f9264075cc93d\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.10.1] C:\Users\AKav\.gradle\caches\transforms-3\68de7715609978c7dd1f9264075cc93d\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+48
+49    <application
+50        android:name="com.farmerbb.notepad.android.NotepadApplication"
+50-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:40:9-51
+51        android:allowBackup="true"
+51-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:41:9-35
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.10.1] C:\Users\AKav\.gradle\caches\transforms-3\68de7715609978c7dd1f9264075cc93d\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+53        android:debuggable="true"
+54        android:icon="@mipmap/ic_launcher"
+54-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:42:9-43
+55        android:label="@string/app_name_debug"
+55-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:43:9-35
+56        android:supportsRtl="true"
+56-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:45:9-35
+57        android:testOnly="true"
+58        android:theme="@style/Theme.Notepad" >
+58-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:44:9-45
+59        <activity
+59-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:82:9-86:57
+60            android:name="com.farmerbb.notepad.android.NotepadActivity"
+60-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:83:13-72
+61            android:exported="true"
+61-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:84:13-36
+62            android:launchMode="singleTop"
+62-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:85:13-43
+63            android:windowSoftInputMode="adjustResize" />
+63-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:86:13-55
+64
+65        <activity-alias
+66            android:name="com.farmerbb.notepad.MainActivity"
+66-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:49:13-61
+67            android:exported="true"
+67-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:52:13-36
+68            android:label="@string/app_name_debug"
+68-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:51:13-39
+69            android:targetActivity="com.farmerbb.notepad.android.NotepadActivity" >
+69-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:50:13-82
+70            <intent-filter>
+70-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:53:13-59:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:54:17-69
+71-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:54:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:56:17-77
+73-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:56:27-74
+74                <category android:name="android.intent.category.DEFAULT" />
+74-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:57:17-76
+74-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:57:27-73
+75                <category android:name="android.intent.category.APP_MAPS" />
+75-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:58:17-77
+75-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:58:27-74
+76            </intent-filter>
+77
+78            <meta-data
+78-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:60:13-61:53
+79                android:name="android.app.shortcuts"
+79-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:60:24-60
+80                android:resource="@xml/shortcuts" />
+80-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:61:17-50
+81        </activity-alias>
+82
+83        <activity
+83-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:87:9-91:57
+84            android:name="com.farmerbb.notepad.android.StandaloneEditorActivity"
+84-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:88:13-81
+85            android:exported="true"
+85-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:89:13-36
+86            android:launchMode="singleTop"
+86-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:90:13-43
+87            android:windowSoftInputMode="adjustResize" />
+87-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:91:13-55
+88
+89        <activity-alias
+90            android:name="com.farmerbb.notepad.activity.NoteEditActivity"
+90-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:64:13-74
+91            android:exported="true"
+91-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:68:13-36
+92            android:label="@string/app_name_debug"
+92-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:66:13-39
+93            android:launchMode="singleTop"
+93-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:67:13-43
+94            android:targetActivity="com.farmerbb.notepad.android.StandaloneEditorActivity" >
+94-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:65:13-91
+95            <intent-filter>
+95-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:69:13-79:29
+96                <action android:name="android.intent.action.VIEW" />
+96-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:70:17-69
+96-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:70:25-66
+97                <action android:name="android.intent.action.EDIT" />
+97-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:71:17-69
+97-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:71:25-66
+98                <action android:name="android.intent.action.SEND" />
+98-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:72:17-69
+98-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:72:25-66
+99                <action android:name="com.google.android.gm.action.AUTO_SEND" />
+99-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:73:17-81
+99-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:73:25-78
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:57:17-76
+101-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:57:27-73
+102                <category android:name="com.google.android.voicesearch.SELF_NOTE" />
+102-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:76:17-85
+102-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:76:27-82
+103
+104                <data android:mimeType="text/plain" />
+104-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:78:17-55
+104-->D:\WORK\kotlin\Notepad\app\src\main\AndroidManifest.xml:78:23-52
+105            </intent-filter>
+106        </activity-alias>
+107
+108        <provider
+108-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:11:9-19:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:12:13-67
+110            android:authorities="com.farmerbb.notepad.debug.androidx-startup"
+110-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:13:13-68
+111            android:exported="false" >
+111-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:14:13-37
+112            <meta-data
+112-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:16:13-18:52
+113                android:name="io.github.jan.supabase.gotrue.SupabaseInitializer"
+113-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:17:17-81
+114                android:value="androidx.startup" />
+114-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:0.7.6] C:\Users\AKav\.gradle\caches\transforms-3\239574feac668afab23396bee399fb50\transformed\jetified-gotrue-kt-debug\AndroidManifest.xml:18:17-49
+115            <meta-data
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\cb940dc78d3d6e76b94cee7124da8359\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+116-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\cb940dc78d3d6e76b94cee7124da8359\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+117                android:value="androidx.startup" />
+117-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\cb940dc78d3d6e76b94cee7124da8359\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+118            <meta-data
+118-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\AKav\.gradle\caches\transforms-3\9290819b6544a8e57516d9f7fbe37b37\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+119                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+119-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\AKav\.gradle\caches\transforms-3\9290819b6544a8e57516d9f7fbe37b37\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+120                android:value="androidx.startup" />
+120-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\AKav\.gradle\caches\transforms-3\9290819b6544a8e57516d9f7fbe37b37\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+121            <meta-data
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+122                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+123                android:value="androidx.startup" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+124            <meta-data
+124-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\b4af40763157666fac4993465916ab88\transformed\jetified-multiplatform-settings-no-arg-debug\AndroidManifest.xml:31:13-33:52
+125                android:name="com.russhwolf.settings.SettingsInitializer"
+125-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\b4af40763157666fac4993465916ab88\transformed\jetified-multiplatform-settings-no-arg-debug\AndroidManifest.xml:32:17-74
+126                android:value="androidx.startup" />
+126-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\b4af40763157666fac4993465916ab88\transformed\jetified-multiplatform-settings-no-arg-debug\AndroidManifest.xml:33:17-49
+127        </provider>
+128
+129        <activity
+129-->[com.google.android.gms:play-services-base:18.4.0] C:\Users\AKav\.gradle\caches\transforms-3\5cf839c852c2d06fd4bc68f4508f129a\transformed\jetified-play-services-base-18.4.0\AndroidManifest.xml:20:9-22:45
+130            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+130-->[com.google.android.gms:play-services-base:18.4.0] C:\Users\AKav\.gradle\caches\transforms-3\5cf839c852c2d06fd4bc68f4508f129a\transformed\jetified-play-services-base-18.4.0\AndroidManifest.xml:20:19-85
+131            android:exported="false"
+131-->[com.google.android.gms:play-services-base:18.4.0] C:\Users\AKav\.gradle\caches\transforms-3\5cf839c852c2d06fd4bc68f4508f129a\transformed\jetified-play-services-base-18.4.0\AndroidManifest.xml:22:19-43
+132            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+132-->[com.google.android.gms:play-services-base:18.4.0] C:\Users\AKav\.gradle\caches\transforms-3\5cf839c852c2d06fd4bc68f4508f129a\transformed\jetified-play-services-base-18.4.0\AndroidManifest.xml:21:19-78
+133
+134        <meta-data
+134-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\AKav\.gradle\caches\transforms-3\716a25d6b78465ab4c78f12b1ad983ab\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+135            android:name="com.google.android.gms.version"
+135-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\AKav\.gradle\caches\transforms-3\716a25d6b78465ab4c78f12b1ad983ab\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+136            android:value="@integer/google_play_services_version" />
+136-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\AKav\.gradle\caches\transforms-3\716a25d6b78465ab4c78f12b1ad983ab\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+137
+138        <uses-library
+138-->[androidx.window:window:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\4a9164255f77f0d0b01e258c76f6b84c\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+139            android:name="androidx.window.extensions"
+139-->[androidx.window:window:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\4a9164255f77f0d0b01e258c76f6b84c\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+140            android:required="false" />
+140-->[androidx.window:window:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\4a9164255f77f0d0b01e258c76f6b84c\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+141        <uses-library
+141-->[androidx.window:window:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\4a9164255f77f0d0b01e258c76f6b84c\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+142            android:name="androidx.window.sidecar"
+142-->[androidx.window:window:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\4a9164255f77f0d0b01e258c76f6b84c\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0] C:\Users\AKav\.gradle\caches\transforms-3\4a9164255f77f0d0b01e258c76f6b84c\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+144
+145        <activity
+145-->[androidx.compose.ui:ui-tooling:1.4.3] C:\Users\AKav\.gradle\caches\transforms-3\cbdbbe3a1e8ce1bdd8f9508e50fcdfc7\transformed\jetified-ui-tooling-1.4.3\AndroidManifest.xml:23:9-25:39
+146            android:name="androidx.compose.ui.tooling.PreviewActivity"
+146-->[androidx.compose.ui:ui-tooling:1.4.3] C:\Users\AKav\.gradle\caches\transforms-3\cbdbbe3a1e8ce1bdd8f9508e50fcdfc7\transformed\jetified-ui-tooling-1.4.3\AndroidManifest.xml:24:13-71
+147            android:exported="true" />
+147-->[androidx.compose.ui:ui-tooling:1.4.3] C:\Users\AKav\.gradle\caches\transforms-3\cbdbbe3a1e8ce1bdd8f9508e50fcdfc7\transformed\jetified-ui-tooling-1.4.3\AndroidManifest.xml:25:13-36
+148
+149        <receiver
+149-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+150            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+150-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+151            android:directBootAware="false"
+151-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+152            android:enabled="true"
+152-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+153            android:exported="true"
+153-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+154            android:permission="android.permission.DUMP" >
+154-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+155            <intent-filter>
+155-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+156                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+157            </intent-filter>
+158            <intent-filter>
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+159                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+160            </intent-filter>
+161            <intent-filter>
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+162                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+163            </intent-filter>
+164            <intent-filter>
+164-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+165                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\AKav\.gradle\caches\transforms-3\9536c6d7a40b7ef5f40168c2f5e182ce\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+166            </intent-filter>
+167        </receiver>
+168    </application>
+169
+170</manifest>
